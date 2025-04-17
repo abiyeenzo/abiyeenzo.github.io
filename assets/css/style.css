@@ -1,0 +1,68 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps du site */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #202124;
+  padding: 0 3rem;
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #1a73e8; /* Bleu de Google */
+  font-weight: bold;
+}
+
+/* Style pour les titres secondaires */
+h2 {
+  font-size: 2rem;
+  color: #5f6368;
+  margin-top: 3rem;
+}
+
+/* Sections */
+.section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1rem;
+  color: #5f6368;
+}
+
+/* Liens */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
