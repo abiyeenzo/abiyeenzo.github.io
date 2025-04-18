@@ -1,46 +1,47 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abiye Enzo - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Abiye Gebresilassie Enzo Emmanuel",
-      "url": "https://abiyeenzo.github.io",
-      "image": "https://abiyeenzo.github.io/assets/images/photo-pro.jpg",
-      "sameAs": [
-        "https://github.com/abiyeenzo"
-      ],
-      "jobTitle": "Développeur Python & Ethical Hacker",
-      "description": "Abiye Enzo est un développeur Python passionné d'IA et de cybersécurité, créateur d'Æ Corporation."
-    }
-  </script>
+  <meta charset="UTF-8" />
+  <title>PenaltyMind V5</title>
+  <style>
+    body { font-family: sans-serif; background: #151515; color: white; text-align: center; }
+    canvas { border: 3px solid white; background: #284; margin-top: 20px; }
+    .controls { margin-top: 20px; }
+    .buttons button { margin: 5px; padding: 10px 20px; font-size: 16px; }
+    #balanceDisplay { font-size: 20px; margin-top: 10px; }
+    .odds { margin-bottom: 10px; }
+  </style>
 </head>
 <body>
+  <h1>🎯 PenaltyMind V5</h1>
+  <div id="balanceDisplay">💰 Solde: <span id="balance">100000</span> XAF</div>
 
-  <header>
-    <img src="assets/images/logo.svg" alt="Logo Æ Corporation">
-    <h1>Abiye Gebresilassie Enzo Emmanuel</h1>
-    <p>Développeur Python | Ethical Hacker | Fondateur d'Æ Corporation</p>
-  </header>
-
-  <div class="section">
-    <h2>À propos</h2>
-    <p>Je suis le fondateur de <strong>Æ Corporation</strong> et je me spécialise dans le développement Python et l'ethical hacking. Mon objectif est de repousser les limites de la cybersécurité et de la technologie en développant des outils et langages innovants.</p>
-
-    <h2>Contact</h2>
-    <p>Retrouvez-moi sur <a href="https://github.com/abiyeenzo" target="_blank">GitHub</a> ou contactez-moi directement à <a href="mailto:contact@abiyeenzo.github.io">contact@abiyeenzo.github.io</a></p>
+  <div class="controls">
+    <input type="number" id="betAmount" value="1000" min="100" max="500000" />
+    <select id="currency">
+      <option value="XAF">XAF</option>
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+    </select>
   </div>
 
-  <footer>
-    &copy; 2025 Abiye Enzo. Tous droits réservés.
-  </footer>
+  <div class="odds">
+    <strong>Cotes :</strong>
+    ⬅️ Gauche: <span id="odds-left">2.0</span> |
+    ⬆️ Centre: <span id="odds-center">3.0</span> |
+    ➡️ Droite: <span id="odds-right">2.5</span>
+  </div>
 
+  <div class="buttons">
+    <button onclick="placeBet('left')">Tirer à Gauche</button>
+    <button onclick="placeBet('center')">Tirer au Centre</button>
+    <button onclick="placeBet('right')">Tirer à Droite</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="300"></canvas>
+  <div id="resultText"></div>
+
+  <script src="game.js"></script>
 </body>
 </html>
