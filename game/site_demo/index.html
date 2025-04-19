@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Spot - Jeu de Hasard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lucky Spot</h1>
+    <div id="balance">Solde: $1000</div>
+    <div class="options">
+      <button id="bet-red" class="bet-btn red">Rouge</button>
+      <button id="bet-black" class="bet-btn black">Noir</button>
+    </div>
+    <div class="wheel-container">
+      <div id="wheel" class="wheel"></div>
+    </div>
+    <input type="number" id="amount" placeholder="Montant de la mise" min="1" value="10">
+    <button id="play">Jouer</button>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
