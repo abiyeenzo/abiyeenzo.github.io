@@ -106,13 +106,13 @@ footer a:hover {
 .certificate {
   text-align: center;
   width: 100%;
-  max-width: 300px; /* Limite la taille des certificats */
+  max-width: 180px; /* Réduit la taille maximale des certificats */
 }
 
 .certificate-image {
   width: 100%;
   height: auto;
-  max-width: 280px; /* Ajuste la taille des images */
+  max-width: 160px; /* Réduit la largeur maximale des images */
   border-radius: 8px;
 }
 
@@ -139,8 +139,17 @@ footer a:hover {
     align-items: center;
   }
 
+    .certificates {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .certificate {
     margin-bottom: 2rem;
     width: 90%;
+    max-width: 150px; /* Limite la taille des certificats pour les petits écrans */
   }
+
 }
+
+
