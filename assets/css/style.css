@@ -139,10 +139,6 @@ footer a:hover {
     align-items: center;
   }
 
-    .certificates {
-    flex-direction: column;
-    align-items: center;
-  }
 
   .certificate {
     margin-bottom: 2rem;
