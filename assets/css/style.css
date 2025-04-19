@@ -23,7 +23,6 @@ header {
   background-color: #111111;
   text-align: center;
   border-bottom: 2px solid #444;
-  flex-direction: column;
 }
 
 header img {
@@ -95,21 +94,34 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Section Wattpad */
-.section a {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ff9800;
-  display: inline-block;
-  margin-top: 1rem;
+/* Certificats */
+.certificates {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate {
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Limite la taille des certificats */
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  max-width: 280px; /* Ajuste la taille des images */
+  border-radius: 8px;
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   header {
     padding: 1.5rem;
   }
-
+  
   header h1 {
     font-size: 2rem;
   }
@@ -122,60 +134,13 @@ footer a:hover {
     padding: 3rem 1rem;
   }
 
-  .section a {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 1.5rem;
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
+  .certificates {
+    flex-direction: column;
+    align-items: center;
   }
 
-  header p {
-    font-size: 1rem;
-  }
-
-  .section {
-    padding: 2.5rem 1rem;
-  }
-
-  .section a {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header img {
-    width: 80px;
-    height: 80px;
-  }
-
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  header p {
-    font-size: 0.9rem;
-  }
-
-  .section {
-    padding: 2rem 1rem;
-  }
-
-  .section a {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
+  .certificate {
+    margin-bottom: 2rem;
+    width: 90%;
   }
 }
