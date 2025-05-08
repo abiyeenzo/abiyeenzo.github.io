@@ -48,9 +48,6 @@
     .button:hover {
       background: #00cc88;
     }
-    ul li {
-      margin: 0.5rem 0;
-    }
     .certification-list a {
       cursor: pointer;
       display: inline-block;
@@ -105,6 +102,21 @@
       background: #000;
       color: #00ff99;
     }
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      filter: brightness(0) saturate(100%) invert(78%) sepia(93%) saturate(354%) hue-rotate(86deg) brightness(100%) contrast(96%);
+      transition: transform 0.3s;
+    }
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
   </style>
   <script>
     function showCertificate(src) {
@@ -132,13 +144,13 @@
   <main class="container">
     <section>
       <h2>À propos</h2>
-      <p>Je suis un développeur orienté cybersécurité, avec une expertise en hacking éthique, automatisation Python, IA et architecture de systèmes. Mon approche hybride allie rigueur logicielle et esprit de hacker pour développer des projets robustes et créatifs. À travers Æ Corporation, je m'engage dans des projets techniques avancés, codés avec précision, comme le ferait une machine parfaitement entraînée.</p>
-      <p><span class="badge">#Python</span> <span class="badge">#OffSec</span> <span class="badge">#AI</span> <span class="badge">#RobotCoder</span></p>
+      <p>Développeur Python et passionné de cybersécurité, je conçois des outils et systèmes avancés comme le ferait une IA spécialisée. Avec une forte culture du hacking éthique et de l'optimisation système, je fonde Æ Corporation pour offrir des solutions robustes, précises et avant-gardistes. Sur HTB et GitHub, je partage mes exploits techniques, scripts, et expérimentations IA pour contribuer à une communauté cyber toujours plus affûtée.</p>
+      <p><span class="badge">#Python</span> <span class="badge">#CyberSecurity</span> <span class="badge">#HackingÉthique</span> <span class="badge">#AI</span></p>
     </section>
 
     <section>
       <h2>Certifications</h2>
-      <p>🔐 Voici mes certifications. Cliquez pour les visualiser :</p>
+      <p>🔐 Cliquez sur une certification pour l'afficher :</p>
       <div class="certification-list">
         <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg')">Python - Débutant</a>
         <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg')">Python - Intermédiaire</a>
@@ -147,38 +159,16 @@
     </section>
 
     <section>
-      <h2>Mon Profil HTB</h2>
-      <p>🔍 Retrouvez mes performances, machines résolues et badges sur Hack The Box :</p>
-      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">🎯 Voir mon profil HTB</a>
+      <h2>HTB & GitHub</h2>
+      <p>📂 Mes performances et projets sont publics :</p>
+      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">🎯 Profil HackTheBox</a>
+      <a href="https://github.com/abiyeenzo" target="_blank" class="button">👨‍💻 Dépôts GitHub</a>
     </section>
 
     <section>
-      <h2>GitHub</h2>
-      <p>📂 Explorez mes projets open-source, outils de cybersécurité et expérimentations IA :</p>
-      <a href="https://github.com/abiyeenzo" target="_blank" class="button">👨‍💻 Accéder à mon GitHub</a>
-    </section>
-
-    <section>
-      <h2>Mes Livres</h2>
-      <p>📚 En parallèle du code, j’écris des histoires de science-fiction et d’anticipation sur Wattpad :</p>
-      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">📖 Lire mes récits</a>
-    </section>
-
-    <section>
-      <h2>Profils Sociaux</h2>
-      <ul>
-        <li><a href="https://www.instagram.com/abiye_enzo" target="_blank">Instagram</a></li>
-        <li><a href="https://www.sololearn.com/profile/26424777" target="_blank">SoloLearn</a></li>
-        <li><a href="https://github.com/abiyeenzo" target="_blank">GitHub</a></li>
-        <li><a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank">HackTheBox</a></li>
-        <li><a href="https://www.linkedin.com/in/abiyeenzo" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.youtube.com/@abiyeenzo" target="_blank">YouTube</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>📬 <a href="mailto:abiyeenzo@gmail.com">abiyeenzo@gmail.com</a></p>
+      <h2>Livres & Histoires</h2>
+      <p>📚 Récits SF sur technologie, IA et hacking :</p>
+      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">📖 Découvrir sur Wattpad</a>
     </section>
   </main>
 
@@ -187,8 +177,16 @@
   </div>
 
   <footer>
-    &copy; <span id="year"></span> Abiye Enzo. Tous droits réservés. | Version actuelle : <strong>v2.1</strong>
+    <div class="social-icons">
+      <a href="mailto:abiyeenzo@gmail.com"><img src="assets/images/logo.png" alt="Email"></a>
+      <a href="https://github.com/abiyeenzo" target="_blank"><img src="assets/images/logo.png" alt="GitHub"></a>
+      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank"><img src="assets/images/logo.png" alt="HTB"></a>
+      <a href="https://www.instagram.com/abiye_enzo" target="_blank"><img src="assets/images/logo.png" alt="Instagram"></a>
+      <a href="https://www.sololearn.com/profile/26424777" target="_blank"><img src="assets/images/logo.png" alt="SoloLearn"></a>
+      <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank"><img src="assets/images/logo.png" alt="LinkedIn"></a>
+      <a href="https://www.youtube.com/@abiyeenzo" target="_blank"><img src="assets/images/logo.png" alt="YouTube"></a>
+    </div>
+    <p>&copy; <span id="year"></span> Abiye Enzo. Tous droits réservés. | Æ Corporation</p>
   </footer>
 </body>
 </html>
-
