@@ -10,12 +10,12 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #333;
+      background: #0f0f0f;
+      color: #f2f2f2;
     }
     header {
-      background: #111;
-      color: white;
+      background: #000;
+      color: #0f0;
       padding: 1rem;
       text-align: center;
     }
@@ -31,35 +31,42 @@
       margin-bottom: 3rem;
     }
     h2 {
-      color: #222;
-      border-left: 4px solid #555;
+      color: #00ff99;
+      border-left: 4px solid #00ff99;
       padding-left: 0.5rem;
     }
     .button, a.button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
-      background: #333;
-      color: white;
+      background: #00ff99;
+      color: #000;
       text-decoration: none;
       border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #00cc88;
     }
     ul li {
       margin: 0.5rem 0;
     }
     .certification-list a {
       cursor: pointer;
-      display: block;
-      padding: 0.5rem;
-      background: #eee;
+      display: inline-block;
+      margin-right: 0.5rem;
       margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #1a1a1a;
+      border: 1px solid #00ff99;
       border-radius: 4px;
       text-decoration: none;
-      color: #333;
+      color: #00ff99;
       transition: background 0.3s;
     }
     .certification-list a:hover {
-      background: #ddd;
+      background: #00ff99;
+      color: #000;
     }
     .certificate-popup {
       display: none;
@@ -68,7 +75,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.9);
       justify-content: center;
       align-items: center;
       z-index: 999;
@@ -76,17 +83,27 @@
     .certificate-popup img {
       max-width: 90vw;
       max-height: 90vh;
-      border: 4px solid white;
+      border: 4px solid #00ff99;
       border-radius: 8px;
     }
     .certificate-popup.active {
       display: flex;
     }
+    .badge {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      background: #000;
+      border: 1px solid #0f0;
+      border-radius: 6px;
+      color: #0f0;
+      font-size: 0.9rem;
+    }
     footer {
       text-align: center;
       padding: 1rem;
-      background: #111;
-      color: white;
+      background: #000;
+      color: #00ff99;
     }
   </style>
   <script>
@@ -106,34 +123,22 @@
 </head>
 <body>
   <header>
-    <img src="assets/images/logo.svg" alt="Logo Æ Corporation" class="logo">
+    <img src="assets/images/logo.png" alt="Logo Æ Corporation" class="logo">
     <h1>Abiye Gebresilassie Enzo Emmanuel</h1>
-    <p>Développeur Python | Ethical Hacker | Fondateur d'Æ Corporation</p>
+    <p>Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation</p>
+    <p>Membre HTB : <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="badge">@abiyeenzo</a></p>
   </header>
 
   <main class="container">
     <section>
       <h2>À propos</h2>
-      <p>Je suis le fondateur de <strong>Æ Corporation</strong> et je me spécialise dans le développement Python et l'ethical hacking.</p>
-    </section>
-
-    <section>
-      <h2>Mes Livres sur Wattpad</h2>
-      <p>Je suis aussi auteur sur <strong>Wattpad</strong> !</p>
-      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">📖 Lire mes histoires</a>
-    </section>
-
-    <section>
-      <h2>Profils Sociaux</h2>
-      <ul>
-        <li><a href="https://www.instagram.com/abiye_enzo" target="_blank">Instagram</a></li>
-        <li><a href="https://www.sololearn.com/profile/26424777" target="_blank">SoloLearn</a></li>
-        <li><a href="https://github.com/abiyeenzo" target="_blank">GitHub</a></li>
-      </ul>
+      <p>Je suis un développeur orienté cybersécurité, avec une expertise en hacking éthique, automatisation Python, IA et architecture de systèmes. Mon approche hybride allie rigueur logicielle et esprit de hacker pour développer des projets robustes et créatifs. À travers Æ Corporation, je m'engage dans des projets techniques avancés, codés avec précision, comme le ferait une machine parfaitement entraînée.</p>
+      <p><span class="badge">#Python</span> <span class="badge">#OffSec</span> <span class="badge">#AI</span> <span class="badge">#RobotCoder</span></p>
     </section>
 
     <section>
       <h2>Certifications</h2>
+      <p>🔐 Voici mes certifications. Cliquez pour les visualiser :</p>
       <div class="certification-list">
         <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg')">Python - Débutant</a>
         <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg')">Python - Intermédiaire</a>
@@ -142,8 +147,38 @@
     </section>
 
     <section>
+      <h2>Mon Profil HTB</h2>
+      <p>🔍 Retrouvez mes performances, machines résolues et badges sur Hack The Box :</p>
+      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">🎯 Voir mon profil HTB</a>
+    </section>
+
+    <section>
+      <h2>GitHub</h2>
+      <p>📂 Explorez mes projets open-source, outils de cybersécurité et expérimentations IA :</p>
+      <a href="https://github.com/abiyeenzo" target="_blank" class="button">👨‍💻 Accéder à mon GitHub</a>
+    </section>
+
+    <section>
+      <h2>Mes Livres</h2>
+      <p>📚 En parallèle du code, j’écris des histoires de science-fiction et d’anticipation sur Wattpad :</p>
+      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">📖 Lire mes récits</a>
+    </section>
+
+    <section>
+      <h2>Profils Sociaux</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/abiye_enzo" target="_blank">Instagram</a></li>
+        <li><a href="https://www.sololearn.com/profile/26424777" target="_blank">SoloLearn</a></li>
+        <li><a href="https://github.com/abiyeenzo" target="_blank">GitHub</a></li>
+        <li><a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank">HackTheBox</a></li>
+        <li><a href="https://www.linkedin.com/in/abiyeenzo" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@abiyeenzo" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Contact</h2>
-      <p>📬 <a href="mailto:contact@abiyeenzo.github.io">contact@abiyeenzo.github.io</a></p>
+      <p>📬 <a href="mailto:abiyeenzo@gmail.com">abiyeenzo@gmail.com</a></p>
     </section>
   </main>
 
@@ -152,7 +187,7 @@
   </div>
 
   <footer>
-    &copy; <span id="year"></span> Abiye Enzo. Tous droits réservés.
+    &copy; <span id="year"></span> Abiye Enzo. Tous droits réservés. | Version actuelle : <strong>v2.1</strong>
   </footer>
 </body>
 </html>
