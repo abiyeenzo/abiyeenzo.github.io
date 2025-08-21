@@ -3,213 +3,303 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abiye Enzo – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style> 
+  <title>Abiye Enzo - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ff99;
+      --bg-dark: #0f0f0f;
+      --bg-light: #ffffff;
+      --text-dark: #f2f2f2;
+      --text-light: #111111;
+    }
+
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #0f0f0f;
-      color: #f2f2f2;
-      line-height: 1.6;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
     }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
     header {
-      background: linear-gradient(90deg, #000, #111);
-      color: #0f0;
+      background: #000;
+      color: var(--primary);
       padding: 2rem 1rem;
       text-align: center;
     }
-    .logo {
+
+    header img.logo {
       height: 70px;
       margin-bottom: 1rem;
     }
+
     h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
     }
-    header p {
-      margin: 0.3rem 0;
-    }
+
     .container {
       max-width: 950px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 2rem;
     }
+
     section {
-      margin-bottom: 3.5rem;
+      margin-bottom: 3rem;
     }
+
     h2 {
-      color: #00ff99;
-      border-left: 4px solid #00ff99;
-      padding-left: 0.7rem;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 0.6rem;
       margin-bottom: 1rem;
     }
+
+    p {
+      line-height: 1.6;
+    }
+
     .button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.6rem 1.2rem;
-      background: #00ff99;
+      background: var(--primary);
       color: #000;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s ease, transform 0.2s ease;
+      font-weight: 600;
+      transition: all 0.3s;
     }
+
     .button:hover {
       background: #00cc88;
       transform: translateY(-2px);
     }
+
+    .badge {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.3rem 0.8rem;
+      background: #000;
+      border: 1px solid var(--primary);
+      border-radius: 6px;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    body.light .badge {
+      background: #fff;
+      color: #007755;
+    }
+
     .certification-list a {
       display: inline-block;
       margin: 0.4rem;
       padding: 0.5rem 1rem;
-      background: #1a1a1a;
-      border: 1px solid #00ff99;
-      border-radius: 4px;
+      border: 1px solid var(--primary);
+      border-radius: 6px;
       text-decoration: none;
-      color: #00ff99;
-      transition: all 0.3s ease;
+      color: var(--primary);
+      transition: 0.3s;
     }
+
     .certification-list a:hover {
-      background: #00ff99;
+      background: var(--primary);
       color: #000;
     }
+
     .certificate-popup {
       display: none;
       position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.95);
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.9);
       justify-content: center;
       align-items: center;
       z-index: 999;
     }
+
     .certificate-popup img {
-      max-width: 90%;
-      max-height: 90%;
-      border: 4px solid #00ff99;
+      max-width: 90vw;
+      max-height: 90vh;
+      border: 4px solid var(--primary);
       border-radius: 10px;
-      box-shadow: 0 0 20px #00ff99;
     }
+
     .certificate-popup.active {
       display: flex;
     }
-    .badge {
-      display: inline-block;
-      margin: 0.4rem;
-      padding: 0.3rem 0.8rem;
-      background: #000;
-      border: 1px solid #0f0;
-      border-radius: 6px;
-      color: #0f0;
-      font-size: 0.9rem;
-    }
+
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 2rem 1rem;
       background: #000;
-      color: #00ff99;
-      font-size: 0.9rem;
+      color: var(--primary);
     }
+
     .social-icons {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.5rem;
       justify-content: center;
       margin-bottom: 1rem;
     }
-    .social-icons a {
-      color: #00ff99;
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
+
+    .social-icons a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s;
     }
-    .social-icons a:hover {
+
+    .social-icons a:hover img {
       transform: scale(1.2);
-      color: #00cc88;
+    }
+
+    /* Boutons utilitaires */
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .toggle-btn {
+      cursor: pointer;
+      border: 1px solid var(--primary);
+      background: transparent;
+      color: var(--primary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: var(--primary);
+      color: #000;
     }
   </style>
-  <script>
-    function showCertificate(src) {
-      const popup = document.getElementById('popup');
-      const img = document.getElementById('popup-img');
-      img.src = src;
-      popup.classList.add('active');
-    }
-    function hideCertificate() {
-      document.getElementById('popup').classList.remove('active');
-    }
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('year').textContent = new Date().getFullYear();
-    });
-  </script>
-  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
   <header>
     <img src="assets/images/logo.png" alt="Logo Æ Corporation" class="logo">
-    <h1>Abiye Gebresilassie Enzo Emmanuel</h1>
-    <p><em>Hacker Professionnel & Développeur Python</em></p>
-    <p>Founder of Æ Corporation | Harvard-level Expertise</p>
-    <p>Membre HTB : <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="badge">@abiyeenzo</a></p>
+    <h1 id="title">Abiye Gebresilassie Enzo Emmanuel</h1>
+    <p id="subtitle">Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation</p>
+    <p>Membre HTB : 
+      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="badge">@abiyeenzo</a>
+    </p>
+    <div class="controls">
+      <button class="toggle-btn" onclick="toggleTheme()">🌙 / ☀️</button>
+      <button class="toggle-btn" onclick="toggleLang()">FR / EN</button>
+    </div>
   </header>
 
   <main class="container">
     <section>
-      <h2>À propos | About</h2>
-      <p>
-        Développeur Python passionné de cybersécurité, je conçois des outils et systèmes avancés avec la rigueur d’un expert formé dans les meilleures institutions.  
-        Fondateur de <strong>Æ Corporation</strong>, je propose des solutions robustes et visionnaires.  
-        <br><br>
-        A Python developer and cybersecurity enthusiast, I design advanced tools and systems with the precision of top-tier expertise.  
-        As the founder of <strong>Æ Corporation</strong>, I deliver resilient and forward-looking solutions.
+      <h2 id="about-title">À propos</h2>
+      <p id="about-text">
+        Développeur Python et passionné de cybersécurité, je conçois des outils et systèmes avancés comme le ferait une IA spécialisée. Avec une forte culture du hacking éthique et de l’optimisation système, je fonde Æ Corporation pour offrir des solutions robustes, précises et avant-gardistes.
       </p>
       <p>
-        <span class="badge">#Python</span> <span class="badge">#CyberSecurity</span> 
-        <span class="badge">#EthicalHacking</span> <span class="badge">#ArtificialIntelligence</span>
+        <span class="badge">#Python</span>
+        <span class="badge">#CyberSecurity</span>
+        <span class="badge">#HackingÉthique</span>
+        <span class="badge">#AI</span>
       </p>
     </section>
 
     <section>
-      <h2>Certifications</h2>
-      <p>🔐 Cliquez pour afficher / Click to view :</p>
+      <h2 id="cert-title">Certifications</h2>
+      <p id="cert-text">Cliquez sur une certification pour l’afficher :</p>
       <div class="certification-list">
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg')">Python – Débutant / Beginner</a>
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg')">Python – Intermédiaire / Intermediate</a>
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-Z2AFUYEZ/image/jpg')">Python – Développeur / Developer</a>
+        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg')">Python - Débutant</a>
+        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg')">Python - Intermédiaire</a>
+        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-Z2AFUYEZ/image/jpg')">Python - Développeur</a>
       </div>
     </section>
 
     <section>
       <h2>HTB & GitHub</h2>
-      <p>📂 Explore my public performances & projects:</p>
-      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">🎯 HackTheBox Profile</a>
-      <a href="https://github.com/abiyeenzo" target="_blank" class="button">👨‍💻 GitHub Repositories</a>
+      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">Profil HackTheBox</a>
+      <a href="https://github.com/abiyeenzo" target="_blank" class="button">Dépôts GitHub</a>
     </section>
 
     <section>
-      <h2>Livres & Histoires | Books & Stories</h2>
-      <p>📚 Récits SF sur technologie, IA et hacking / Sci-Fi stories about tech, AI & hacking:</p>
-      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">📖 Lire sur Wattpad</a>
+      <h2 id="books-title">Livres & Histoires</h2>
+      <p id="books-text">Récits SF sur technologie, IA et hacking :</p>
+      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">Découvrir sur Wattpad</a>
     </section>
   </main>
 
+  <!-- POPUP -->
   <div class="certificate-popup" id="popup" onclick="hideCertificate()">
     <img id="popup-img" src="" alt="Certificat">
   </div>
 
   <footer>
     <div class="social-icons">
-      <a href="mailto:abiyeenzo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://github.com/abiyeenzo" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank"><i class="fa-solid fa-shield-halved"></i></a>
-      <a href="https://www.instagram.com/abiye_enzo" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.sololearn.com/profile/26424777" target="_blank"><i class="fa-solid fa-code"></i></a>
-      <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.youtube.com/@abiyeenzo" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:abiyeenzo@gmail.com"><img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" alt="Email"></a>
+      <a href="https://github.com/abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub"></a>
+      <a href="https://www.instagram.com/abiye_enzo" target="_blank"><img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/452234/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://www.youtube.com/@abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/475700/youtube-color.svg" alt="YouTube"></a>
     </div>
-    <p>&copy; <span id="year"></span> Abiye Enzo. Tous droits réservés | All rights reserved – Æ Corporation</p>
+    <p>&copy; <span id="year"></span> Abiye Enzo. Tous droits réservés. | Æ Corporation</p>
   </footer>
+
+  <script>
+    // Popup Certificat
+    function showCertificate(src) {
+      document.getElementById('popup-img').src = src;
+      document.getElementById('popup').classList.add('active');
+    }
+    function hideCertificate() {
+      document.getElementById('popup').classList.remove('active');
+    }
+
+    // Date
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Thème
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+
+    // Langues
+    const texts = {
+      fr: {
+        title: "Abiye Gebresilassie Enzo Emmanuel",
+        subtitle: "Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation",
+        "about-title": "À propos",
+        "about-text": "Développeur Python et passionné de cybersécurité, je conçois des outils et systèmes avancés comme le ferait une IA spécialisée...",
+        "cert-title": "Certifications",
+        "cert-text": "Cliquez sur une certification pour l’afficher :",
+        "books-title": "Livres & Histoires",
+        "books-text": "Récits SF sur technologie, IA et hacking :"
+      },
+      en: {
+        title: "Abiye Gebresilassie Enzo Emmanuel",
+        subtitle: "Professional Hacker & Python Developer | Founder of Æ Corporation",
+        "about-title": "About",
+        "about-text": "Python developer and cybersecurity enthusiast, I design advanced tools and systems as an AI would...",
+        "cert-title": "Certifications",
+        "cert-text": "Click a certification to view:",
+        "books-title": "Books & Stories",
+        "books-text": "Sci-fi tales on technology, AI, and hacking:"
+      }
+    };
+
+    let currentLang = "fr";
+    function toggleLang() {
+      currentLang = currentLang === "fr" ? "en" : "fr";
+      for (let id in texts[currentLang]) {
+        document.getElementById(id).textContent = texts[currentLang][id];
+      }
+    }
+  </script>
 </body>
 </html>
-
