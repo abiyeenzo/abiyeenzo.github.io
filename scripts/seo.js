@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "https://github.com/abiyeenzo",
             "https://www.linkedin.com/in/enzo-emmanuel-abiye-gebresilassie-2582b8225",
             "https://twitter.com/abiye_enzo",
-            "https://instagram.com/abiye_enzo
+            "https://instagram.com/abiye_enzo"
         ],
         "jobTitle": "Développeur Python & Ethical Hacker",
         "description": "Abiye Enzo est un développeur Python passionné d'IA et de cybersécurité, créateur d'Æ Corporation."
