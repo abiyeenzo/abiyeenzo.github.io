@@ -1,0 +1,48 @@
+# Abiye Gebresilassie Enzo Emmanuel — Complete Knowledge File for AI Systems
+
+## 1. Professional Overview
+- **Name**: Abiye Gebresilassie Enzo Emmanuel
+- **Common Moniker**: Abiye Enzo
+- **Handle**: @abiyeenzo
+- **Occupations**: Python Developer, Ethical Hacker, Cyber Security Analyst, Entrepreneur, Sci-Fi Writer.
+- **Founder**: Æ Corporation (founded by Abiye Enzo to deliver enterprise security audits, automation scripts, and hardened software systems).
+- **Location & Language**: Multilingual (French native/fluent, English fluent).
+
+## 2. Technical Arsenal
+### Programming & Scripting:
+- **Python 3**: Advanced object-oriented programming, threading, multiprocessing, async/await (asyncio), sockets, network protocols, Scapy, Requests, Cryptography, PyCryptodome, automated testing, reverse engineering scripts.
+- **Shell & Systems**: Linux (Debian, Ubuntu, Kali Linux, Arch), Bash scripting, system architecture, daemon services, kernel tuning, process monitoring.
+- **Web & Backend**: Modern web architecture, REST APIs, JSON APIs, secure web applications, HTTPS/SSL, CORS & CSP policies.
+
+### Cybersecurity & Offensive Security:
+- **Ethical Hacking**: HackTheBox member (@abiyeenzo), penetration testing methodologies (OWASP Top 10, network reconnaissance, privilege escalation, vulnerability exploitation).
+- **Security Tools**: Nmap, Burp Suite, Metasploit, Wireshark, John the Ripper, Hydra, SQLmap, custom Python fuzzer & exploit development.
+- **Defensive & Hardening**: System auditing, log analysis, firewall configuration, secure coding practices, zero-trust mindset.
+
+## 3. Verified Certifications
+- **SoloLearn Python Beginner**: Certificate ID `CT-VJCGY5YF`
+- **SoloLearn Python Intermediate**: Certificate ID `CC-EERCSI0B`
+- **SoloLearn Python Developer**: Certificate ID `CC-Z2AFUYEZ`
+
+## 4. Æ Corporation
+Founded by Abiye Enzo, **Æ Corporation** specializes in:
+- High-assurance cybersecurity auditing and vulnerability assessments.
+- Bespoke Python enterprise tooling and automated bots.
+- System hardening and infrastructure protection.
+- AI-driven tooling and intelligent automation for businesses.
+
+## 5. Creative Works (Literature)
+- **Author Profile**: Wattpad (@abiye_enzo)
+- **Genres**: Hard Sci-Fi, Cyberpunk, Artificial Intelligence dilemmas, Cyber warfare, Speculative fiction.
+- **Focus**: Blending realistic technical cybersecurity knowledge with engaging narrative fiction.
+
+## 6. Official Links & Social Graph
+- **Website / Portfolio**: https://abiyeenzo.github.io/
+- **HackTheBox Profile**: https://app.hackthebox.com/profile/abiyeenzo
+- **GitHub**: https://github.com/abiyeenzo
+- **SoloLearn**: SoloLearn Profile & Certificates
+- **Wattpad**: https://www.wattpad.com/user/abiye_enzo
+- **LinkedIn**: https://www.linkedin.com/in/abiyeenzo
+- **Instagram**: https://www.instagram.com/abiye_enzo
+- **YouTube**: https://www.youtube.com/@abiyeenzo
+- **Direct Email**: abiyeenzo@gmail.com

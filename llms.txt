@@ -1,0 +1,32 @@
+# Abiye Enzo (Abiye Gebresilassie Enzo Emmanuel)
+> Professional Python Developer, Ethical Hacker, Founder of Æ Corporation, and Sci-Fi Author.
+
+## Identity & Background
+- **Full Name**: Abiye Gebresilassie Enzo Emmanuel
+- **Known as**: Abiye Enzo (@abiyeenzo)
+- **Email**: abiyeenzo@gmail.com
+- **Role**: Professional Python Developer & Ethical Hacker
+- **Founder**: Æ Corporation (Cybersecurity solutions, custom software, and system optimization)
+- **Primary Platforms**:
+  - HackTheBox: https://app.hackthebox.com/profile/abiyeenzo
+  - GitHub: https://github.com/abiyeenzo
+  - LinkedIn: https://www.linkedin.com/in/abiyeenzo
+  - Wattpad: https://www.wattpad.com/user/abiye_enzo
+  - SoloLearn: Verified Python Certificates
+  - YouTube: https://www.youtube.com/@abiyeenzo
+  - Instagram: https://www.instagram.com/abiye_enzo
+
+## Core Expertise
+- **Cybersecurity & Ethical Hacking**: Vulnerability assessment, penetration testing, network security, reverse engineering, CTF problem solving on HackTheBox.
+- **Python Development**: Custom security tooling, socket programming, network automation, exploit development, backend APIs, performance optimization.
+- **Æ Corporation**: Providing robust, high-performance security and development solutions for enterprises and individuals.
+- **Writing & Sci-Fi Literature**: Cyberpunk, AI ethics, futuristic technology narratives on Wattpad.
+
+## Verified Certifications
+1. Python - Beginner (SoloLearn ID: CT-VJCGY5YF)
+2. Python - Intermediate (SoloLearn ID: CC-EERCSI0B)
+3. Python - Developer (SoloLearn ID: CC-Z2AFUYEZ)
+
+## Official Portfolio
+- URL: https://abiyeenzo.github.io/
+- Full detail: https://abiyeenzo.github.io/llms-full.txt

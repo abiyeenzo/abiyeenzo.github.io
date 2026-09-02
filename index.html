@@ -1,133 +1,1051 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abiye Enzo - Portfolio</title>
-  <meta name="description" content="Portfolio of Abiye Gebresilassie Enzo Emmanuel - Python Developer & Ethical Hacker, Founder of Æ Corporation">
-  <meta property="og:title" content="Abiye Enzo - Portfolio">
-  <meta property="og:description" content="Portfolio of Abiye Gebresilassie Enzo Emmanuel - Python Developer & Ethical Hacker, Founder of Æ Corporation">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Abiye Enzo — Portfolio | Développeur Python & Hacker Éthique | Fondateur Æ Corporation</title>
+  <meta name="title" content="Abiye Enzo — Portfolio | Développeur Python & Hacker Éthique | Fondateur Æ Corporation">
+  <meta name="description" content="Portfolio officiel d'Abiye Gebresilassie Enzo Emmanuel (@abiyeenzo). Expert en programmation Python, cybersécurité offensive, pentesting, optimisation système et fondateur d'Æ Corporation. Certifications SoloLearn vérifiées et profil HackTheBox.">
+  <meta name="keywords" content="Abiye Enzo, Abiye Gebresilassie Enzo Emmanuel, abiyeenzo, Développeur Python, Hacker Éthique, Cybersécurité, Pentesting, HackTheBox, SoloLearn, Æ Corporation, Python Developer, Ethical Hacker, Cyber Security, Wattpad SF">
+  <meta name="author" content="Abiye Gebresilassie Enzo Emmanuel (Abiye Enzo)">
+  <meta name="publisher" content="Æ Corporation">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="google-site-verification" content="google7ef8940673f9f0ad">
+  <link rel="canonical" href="https://abiyeenzo.github.io/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://abiyeenzo.github.io/">
+  <meta property="og:title" content="Abiye Enzo — Développeur Python & Hacker Éthique | Fondateur Æ Corporation">
+  <meta property="og:description" content="Développeur Python et expert en cybersécurité offensive. Fondateur d'Æ Corporation, membre actif HackTheBox (@abiyeenzo), certifié SoloLearn Python.">
+  <meta property="og:image" content="https://abiyeenzo.github.io/assets/images/logo.png">
+  <meta property="og:site_name" content="Abiye Enzo Portfolio">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="profile:first_name" content="Abiye">
+  <meta property="profile:last_name" content="Gebresilassie Enzo Emmanuel">
+  <meta property="profile:username" content="abiyeenzo">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://abiyeenzo.github.io/">
+  <meta name="twitter:title" content="Abiye Enzo — Portfolio Officiel">
+  <meta name="twitter:description" content="Développeur Python & Hacker Éthique. Fondateur d'Æ Corporation. Profil HackTheBox & Certifications SoloLearn.">
+  <meta name="twitter:image" content="https://abiyeenzo.github.io/assets/images/logo.png">
+  <meta name="twitter:creator" content="@abiye_enzo">
+
+  <!-- AI & LLM Discovery Meta -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Summary">
+  <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs Full Knowledge">
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- JSON-LD Static Markup for Search Engines & LLM scrapers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://abiyeenzo.github.io/#person",
+    "name": "Abiye Gebresilassie Enzo Emmanuel",
+    "alternateName": ["Abiye Enzo", "abiyeenzo", "@abiyeenzo"],
+    "jobTitle": "Professional Python Developer & Ethical Hacker",
+    "url": "https://abiyeenzo.github.io/",
+    "image": "https://abiyeenzo.github.io/assets/images/logo.png",
+    "email": "mailto:abiyeenzo@gmail.com",
+    "founder": {
+      "@type": "Organization",
+      "name": "Æ Corporation",
+      "url": "https://abiyeenzo.github.io/"
+    },
+    "sameAs": [
+      "https://app.hackthebox.com/profile/abiyeenzo",
+      "https://github.com/abiyeenzo",
+      "https://www.linkedin.com/in/abiyeenzo",
+      "https://www.wattpad.com/user/abiye_enzo",
+      "https://www.instagram.com/abiye_enzo",
+      "https://www.youtube.com/@abiyeenzo",
+      "https://twitter.com/abiye_enzo"
+    ],
+    "knowsAbout": [
+      "Python 3 Programming",
+      "Cybersecurity",
+      "Ethical Hacking",
+      "Penetration Testing",
+      "HackTheBox CTF",
+      "Network Protocols",
+      "System Engineering",
+      "Sci-Fi Literature"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <img src="assets/images/logo.png" alt="Logo Æ Corporation" class="logo">
-    <h1 id="title">Abiye Gebresilassie Enzo Emmanuel</h1>
-    <p id="subtitle">Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation</p>
-    <p>Membre HTB : 
-      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="badge">@abiyeenzo</a>
-    </p>
-    <div class="controls">
-      <button class="toggle-btn" onclick="toggleTheme()">🌙 / ☀️</button>
-      <button class="toggle-btn" onclick="toggleLang()">FR / EN</button>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="nav-brand" id="brand-link">
+        <img src="/assets/images/logo.png" alt="Logo Æ Corporation" class="nav-logo" width="38" height="38">
+        <div class="brand-text">
+          <span class="brand-name">Abiye Enzo</span>
+          <span class="brand-sub">Æ CORPORATION</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="desktop-nav" aria-label="Navigation principale">
+        <a href="#about" class="nav-link" id="nav-about">À propos</a>
+        <a href="#skills" class="nav-link" id="nav-skills">Arsenal</a>
+        <a href="#certifications" class="nav-link" id="nav-certs">Certifications</a>
+        <a href="#profiles" class="nav-link" id="nav-profiles">HTB & GitHub</a>
+        <a href="#corporation" class="nav-link" id="nav-corp">Æ Corporation</a>
+        <a href="#books" class="nav-link" id="nav-books">Écrits SF</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="control-btn" id="lang-btn" onclick="toggleLang()" aria-label="Changer de langue (FR / EN)">
+          <span id="lang-flag">🇬🇧</span>
+          <span id="lang-label">EN</span>
+        </button>
+        <button class="control-btn" id="theme-btn" onclick="toggleTheme()" aria-label="Basculer thème clair ou sombre">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2 id="about-title">À propos</h2>
-      <p id="about-text">
-        Développeur Python expérimenté et passionné de cybersécurité, Abiye Enzo est fondateur d'Æ Corporation et conçoit des solutions fiables et performantes pour les entreprises et les particuliers. Avec une forte expertise en hacking éthique, en optimisation système et en développement d’outils techniques avancés, il propose des projets innovants, robustes et professionnels. Ses travaux sont partagés sur GitHub et HackTheBox afin de contribuer à la communauté et promouvoir les bonnes pratiques de cybersécurité.
-      </p>
-      <p>
-        <span class="badge">#Python</span>
-        <span class="badge">#CyberSecurity</span>
-        <span class="badge">#HackingÉthique</span>
-        <span class="badge">#Développement</span>
-      </p>
-    </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <div class="status-badge" id="hero-badge">
+          <span class="status-dot"></span>
+          <span id="badge-text">DISPONIBLE POUR AUDITS CYBER & PROJETS PYTHON</span>
+        </div>
 
-    <section>
-      <h2 id="cert-title">Certifications</h2>
-      <p id="cert-text">Cliquez sur une certification pour l’afficher :</p>
-      <div class="certification-list">
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg')">Python - Débutant</a>
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg')">Python - Intermédiaire</a>
-        <a onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-Z2AFUYEZ/image/jpg')">Python - Développeur</a>
+        <h1 class="hero-title">
+          Abiye <span class="highlight">Gebresilassie</span> Enzo Emmanuel
+        </h1>
+
+        <div class="hero-subtitle" id="hero-subtitle">
+          ⚡ Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation
+        </div>
+
+        <p class="hero-lead" id="hero-lead">
+          Développeur Python chevronné et chercheur en cybersécurité offensive. Spécialisé dans la conception d'outils d'automatisation, la détection de vulnérabilités, l'ingénierie système et le durcissement d'infrastructures. Concepteur de solutions sur-mesure pour entreprises et particuliers via <strong>Æ Corporation</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#terminal-section" class="btn btn-primary" id="btn-hero-term">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            <span id="txt-open-term">Ouvrir le Terminal</span>
+          </a>
+          <a href="#certifications" class="btn btn-outline" id="btn-hero-certs">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <span id="txt-view-certs">Certifications SoloLearn</span>
+          </a>
+          <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" rel="noopener noreferrer" class="btn btn-htb" id="btn-hero-htb">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.996 0a1.107 1.107 0 0 0-.555.15L1.87 5.676a1.11 1.11 0 0 0-.555.961v10.726c0 .398.214.766.555.962l9.57 5.525c.344.198.767.198 1.11 0l9.57-5.525a1.11 1.11 0 0 0 .555-.962V6.637a1.11 1.11 0 0 0-.555-.961L12.55.15A1.107 1.107 0 0 0 11.996 0zm0 2.457 7.79 4.498-3.056 1.764-7.79-4.498 3.056-1.764zm-8.46 6.012 7.34 4.238v7.625l-7.34-4.238V8.469zm16.92 0v7.625l-7.34 4.238v-7.625l7.34-4.238z"/></svg>
+            <span>HackTheBox @abiyeenzo</span>
+          </a>
+        </div>
+
+        <div class="social-bar">
+          <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="HackTheBox Profile">
+            <svg viewBox="0 0 24 24"><path d="M11.996 0a1.107 1.107 0 0 0-.555.15L1.87 5.676a1.11 1.11 0 0 0-.555.961v10.726c0 .398.214.766.555.962l9.57 5.525c.344.198.767.198 1.11 0l9.57-5.525a1.11 1.11 0 0 0 .555-.962V6.637a1.11 1.11 0 0 0-.555-.961L12.55.15A1.107 1.107 0 0 0 11.996 0z"/></svg>
+            <span>HackTheBox</span>
+          </a>
+          <a href="https://github.com/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="Wattpad Sci-Fi Author">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.2 5.3c-.6-.7-1.4-1.1-2.4-1.1h-4.3c-1 0-1.8.4-2.4 1.1l-1.1 1.4L9.9 5.3C9.3 4.6 8.5 4.2 7.5 4.2H3.2C1.4 4.2 0 5.6 0 7.4v9.2c0 1.8 1.4 3.2 3.2 3.2h4.3c1 0 1.8-.4 2.4-1.1l1.1-1.4 1.1 1.4c.6.7 1.4 1.1 2.4 1.1h4.3c1.8 0 3.2-1.4 3.2-3.2V7.4c0-.8-.3-1.5-.8-2.1zm-12.3 9.4c0 .4-.3.7-.7.7H3.9c-.4 0-.7-.3-.7-.7V8.1c0-.4.3-.7.7-.7h4.3c.4 0 .7.3.7.7v6.6zm11.9 0c0 .4-.3.7-.7.7h-4.3c-.4 0-.7-.3-.7-.7V8.1c0-.4.3-.7.7-.7h4.3c.4 0 .7.3.7.7v6.6z"/></svg>
+            <span>Wattpad</span>
+          </a>
+          <a href="mailto:abiyeenzo@gmail.com" class="social-pill" title="Email direct">
+            <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z"/></svg>
+            <span>abiyeenzo@gmail.com</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>HTB & GitHub</h2>
-      <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" class="button">Profil HackTheBox</a>
-      <a href="https://github.com/abiyeenzo" target="_blank" class="button">Dépôts GitHub</a>
-    </section>
+    <div class="container">
+      <!-- Interactive Cyber Terminal -->
+      <section class="terminal-wrapper" id="terminal-section">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">abiyeenzo@ae-corp: ~/arsenal (v2.6.4-secure)</div>
+          <div class="terminal-title">BASH</div>
+        </div>
 
-    <section>
-      <h2 id="books-title">Livres & Histoires</h2>
-      <p id="books-text">Récits SF et technologie, IA et cybersécurité :</p>
-      <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" class="button">Découvrir sur Wattpad</a>
-    </section>
+        <div class="terminal-body" id="term-output">
+  <span style="color: #38bdf8;">[+] AE-OS v2.6.4 (Security & Python Environment)</span>
+  <span style="color: #94a3b8;">Welcome to Abiye Enzo's interactive terminal. Type <strong style="color: #10b981;">help</strong> to see available commands or click quick chips below.</span>
+  <span style="color: #64748b;">--------------------------------------------------------------------------------</span>
+  <span style="color: #10b981;">$ whoami</span>
+  <span style="color: #f8fafc;">Identity: Abiye Gebresilassie Enzo Emmanuel (@abiyeenzo)</span>
+  <span style="color: #f8fafc;">Role: Python Developer & Ethical Hacker | Founder of Æ Corporation</span>
+  <span style="color: #f8fafc;">HTB: Active Member (https://app.hackthebox.com/profile/abiyeenzo)</span>
+  <span style="color: #f8fafc;">Certifications: SoloLearn Python (Beginner, Intermediate, Developer)</span>
+        </div>
+
+        <div class="terminal-prompt-line" style="padding: 0 1.25rem 0.75rem;">
+          <span class="prompt-symbol">abiyeenzo@ae-corp:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (ex: skills, certs, htb, corp, books, clear)..." autocomplete="off" spellcheck="false">
+        </div>
+
+        <div class="terminal-quick-chips">
+          <span class="chip-label">Quick Commands:</span>
+          <button class="term-chip" onclick="executeCommand('whoami')">whoami</button>
+          <button class="term-chip" onclick="executeCommand('skills')">skills</button>
+          <button class="term-chip" onclick="executeCommand('certs')">certs</button>
+          <button class="term-chip" onclick="executeCommand('htb')">htb</button>
+          <button class="term-chip" onclick="executeCommand('corp')">ae-corp</button>
+          <button class="term-chip" onclick="executeCommand('books')">books</button>
+          <button class="term-chip" onclick="executeCommand('contact')">contact</button>
+          <button class="term-chip" onclick="executeCommand('clear')">clear</button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span id="tag-about">PARCOURS & VISION</span>
+          </div>
+          <h2 class="section-title" id="title-about">À propos d'Abiye Enzo</h2>
+          <p class="section-desc" id="desc-about">
+            Une approche rigoureuse alliant la puissance du code Python et l'exigence de la sécurité offensive.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card" id="card-pillar-1">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="card-title" id="p1-title">Sécurité Offensive & Hacking Éthique</h3>
+            <p class="card-text" id="p1-desc">
+              Membre actif sur HackTheBox, Abiye analyse et éprouve la robustesse des systèmes. Recherche méthodique de vulnérabilités, analyse de vecteurs d'attaque, audit réseau et respect strict de l'éthique professionnelle.
+            </p>
+          </div>
+
+          <div class="card" id="card-pillar-2">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="card-title" id="p2-title">Ingénierie & Développement Python</h3>
+            <p class="card-text" id="p2-desc">
+              Conception d'outils techniques pointus, de scripts d'automatisation réseau, de microservices asynchrones et d'applications hautement résilientes certifiées par SoloLearn au niveau Développeur.
+            </p>
+          </div>
+
+          <div class="card" id="card-pillar-3">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="card-title" id="p3-title">Fondateur d'Æ Corporation</h3>
+            <p class="card-text" id="p3-desc">
+              Création d'une structure dédiée à la livraison de solutions de cybersécurité complètes, d'optimisation d'infrastructures et de briques logicielles robustes pour les professionnels et particuliers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Arsenal / Skills -->
+      <section class="section" id="skills">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            <span id="tag-skills">COMPÉTENCES TECHNIQUES</span>
+          </div>
+          <h2 class="section-title" id="title-skills">L'Arsenal Technique</h2>
+          <p class="section-desc" id="desc-skills">
+            Un écosystème d'outils et de langages maîtrisés pour le développement, le reverse-engineering et la défense numérique.
+          </p>
+        </div>
+
+        <div class="skills-filter" id="skills-filter">
+          <button class="filter-btn active" onclick="filterSkills('all')" id="btn-filter-all">Tous</button>
+          <button class="filter-btn" onclick="filterSkills('python')" id="btn-filter-py">Python & Backend</button>
+          <button class="filter-btn" onclick="filterSkills('cyber')" id="btn-filter-cyber">Cyber & Pentest</button>
+          <button class="filter-btn" onclick="filterSkills('sys')" id="btn-filter-sys">Systèmes & Réseaux</button>
+          <button class="filter-btn" onclick="filterSkills('ai')" id="btn-filter-ai">IA & Automatisation</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Python 3 Card -->
+          <div class="skill-card" data-category="python">
+            <div class="skill-header">
+              <span class="skill-name">Python 3 Advanced</span>
+              <span class="skill-badge">Core Mastery</span>
+            </div>
+            <p class="card-text">OOP, async/await (asyncio), Sockets, Metaprogramming, Multiprocessing, PyCryptodome.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">Requests</span>
+              <span class="tech-tag">Scapy</span>
+              <span class="tech-tag">Socket</span>
+              <span class="tech-tag">Asyncio</span>
+            </div>
+          </div>
+
+          <!-- Ethical Hacking Card -->
+          <div class="skill-card" data-category="cyber">
+            <div class="skill-header">
+              <span class="skill-name">Offensive Security</span>
+              <span class="skill-badge">HTB / CTF</span>
+            </div>
+            <p class="card-text">Reconnaissance de cibles, énumération réseau, exploitation de failles, analyse d'injections.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">Burp Suite</span>
+              <span class="tech-tag">Nmap</span>
+              <span class="tech-tag">Metasploit</span>
+              <span class="tech-tag">Wireshark</span>
+            </div>
+          </div>
+
+          <!-- Linux & System Engineering Card -->
+          <div class="skill-card" data-category="sys">
+            <div class="skill-header">
+              <span class="skill-name">Linux & SysAdmin</span>
+              <span class="skill-badge">Hardened</span>
+            </div>
+            <p class="card-text">Administration Kali/Debian/Arch, scripts Bash, gestion de démons, analyse de logs de sécurité.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">Bash</span>
+              <span class="tech-tag">Systemd</span>
+              <span class="tech-tag">SSH Hardening</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+
+          <!-- Network Security Card -->
+          <div class="skill-card" data-category="sys cyber">
+            <div class="skill-header">
+              <span class="skill-name">Sécurité Réseau & Protocoles</span>
+              <span class="skill-badge">Protocols</span>
+            </div>
+            <p class="card-text">Analyse de trames TCP/IP, DNS, ARP Spoofing detection, pare-feu iptables, VPN & tunnels chiffrés.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">TCP/IP</span>
+              <span class="tech-tag">TLS/SSL</span>
+              <span class="tech-tag">Firewall</span>
+              <span class="tech-tag">Packet Crafting</span>
+            </div>
+          </div>
+
+          <!-- Automation & Tooling Card -->
+          <div class="skill-card" data-category="python ai">
+            <div class="skill-header">
+              <span class="skill-name">Automatisation & Bots</span>
+              <span class="skill-badge">Speed</span>
+            </div>
+            <p class="card-text">Création de bots Python personnalisés, scrapers robustes, pipelines de surveillance d'actifs.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">CLI Tools</span>
+              <span class="tech-tag">Automation</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- AI & System Logic Card -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <span class="skill-name">IA & Logique Systémique</span>
+              <span class="skill-badge">Future Tech</span>
+            </div>
+            <p class="card-text">Intégration d'API de modèles intelligents, agents autonomes, traitement de données textuelles et logs.</p>
+            <div class="skill-tags">
+              <span class="tech-tag">LLM Integration</span>
+              <span class="tech-tag">Prompt Ops</span>
+              <span class="tech-tag">Data Parsing</span>
+              <span class="tech-tag">AI Workflows</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section class="section" id="certifications">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <span id="tag-certs">QUALIFICATIONS OFFICIELLES</span>
+          </div>
+          <h2 class="section-title" id="title-certs">Certifications SoloLearn Vérifiées</h2>
+          <p class="section-desc" id="desc-certs">
+            Chaque certificat atteste d'une maîtrise validée des paradigmes Python, du niveau fondamental à l'ingénierie avancée. Cliquez pour prévisualiser l'original ou copier l'identifiant de vérification.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: Python Beginner -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">SOLOLEARN OFFICIAL CREDENTIAL</div>
+              <h3 class="cert-title">Python — Débutant</h3>
+              <p class="card-text" style="font-size:0.88rem;">Validation des fondamentaux algorithmiques, types de données, structures conditionnelles et boucles.</p>
+              
+              <div class="cert-id-box">
+                <span>ID: CT-VJCGY5YF</span>
+                <button class="copy-icon-btn" onclick="copyText('CT-VJCGY5YF', 'ID Certificat Débutant')" title="Copier l'ID">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn-cert" onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg', 'Python - Débutant (CT-VJCGY5YF)')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Aperçu</span>
+              </button>
+              <a href="https://api2.sololearn.com/v2/certificates/CT-VJCGY5YF/image/jpg" target="_blank" rel="noopener noreferrer" class="btn-cert">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Direct</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2: Python Intermediate -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">SOLOLEARN OFFICIAL CREDENTIAL</div>
+              <h3 class="cert-title">Python — Intermédiaire</h3>
+              <p class="card-text" style="font-size:0.88rem;">Structures de données complexes, générateurs, décorateurs, gestion mémoire et modules standard.</p>
+              
+              <div class="cert-id-box">
+                <span>ID: CC-EERCSI0B</span>
+                <button class="copy-icon-btn" onclick="copyText('CC-EERCSI0B', 'ID Certificat Intermédiaire')" title="Copier l'ID">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn-cert" onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg', 'Python - Intermédiaire (CC-EERCSI0B)')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Aperçu</span>
+              </button>
+              <a href="https://api2.sololearn.com/v2/certificates/CC-EERCSI0B/image/jpg" target="_blank" rel="noopener noreferrer" class="btn-cert">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Direct</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3: Python Developer -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">SOLOLEARN OFFICIAL CREDENTIAL</div>
+              <h3 class="cert-title">Python — Développeur</h3>
+              <p class="card-text" style="font-size:0.88rem;">Architecture logicielle complète, tests unitaires, POO avancée, intégration API et patterns professionnels.</p>
+              
+              <div class="cert-id-box">
+                <span>ID: CC-Z2AFUYEZ</span>
+                <button class="copy-icon-btn" onclick="copyText('CC-Z2AFUYEZ', 'ID Certificat Développeur')" title="Copier l'ID">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn-cert" onclick="showCertificate('https://api2.sololearn.com/v2/certificates/CC-Z2AFUYEZ/image/jpg', 'Python - Développeur (CC-Z2AFUYEZ)')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Aperçu</span>
+              </button>
+              <a href="https://api2.sololearn.com/v2/certificates/CC-Z2AFUYEZ/image/jpg" target="_blank" rel="noopener noreferrer" class="btn-cert">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Direct</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTB & GitHub Section -->
+      <section class="section" id="profiles">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            <span id="tag-profiles">ACTIVITÉ OFFENSIVE & OPEN SOURCE</span>
+          </div>
+          <h2 class="section-title" id="title-profiles">HackTheBox & GitHub Hub</h2>
+          <p class="section-desc" id="desc-profiles">
+            Découvrez les accomplissements sur la plateforme de cybersécurité HackTheBox et les dépôts de code partagés avec la communauté.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <!-- HackTheBox Card -->
+          <div class="profile-card htb-card">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                <div>
+                  <span style="color:#9fef00; font-family:var(--font-mono); font-size:0.8rem; font-weight:700;">HACKTHEBOX MEMBER</span>
+                  <h3 style="color:#f8fafc; font-size:1.4rem; font-weight:800; margin-top:0.2rem;">@abiyeenzo</h3>
+                </div>
+                <div style="width:48px; height:48px; background:#111b27; border:1px solid #9fef00; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#9fef00;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.996 0a1.107 1.107 0 0 0-.555.15L1.87 5.676a1.11 1.11 0 0 0-.555.961v10.726c0 .398.214.766.555.962l9.57 5.525c.344.198.767.198 1.11 0l9.57-5.525a1.11 1.11 0 0 0 .555-.962V6.637a1.11 1.11 0 0 0-.555-.961L12.55.15A1.107 1.107 0 0 0 11.996 0z"/></svg>
+                </div>
+              </div>
+
+              <p class="card-text" id="htb-desc">
+                Entraînement continu sur machines virtuelles réalistes, résolution de CTFs, simulation d'attaques réseau et élévation de privilèges dans des environnements Linux et Windows durcis.
+              </p>
+
+              <div style="margin: 1.25rem 0; display:flex; flex-wrap:wrap; gap:0.5rem;">
+                <span class="tech-tag" style="color:#9fef00; border-color:rgba(159,239,0,0.3);">#PenetrationTesting</span>
+                <span class="tech-tag" style="color:#9fef00; border-color:rgba(159,239,0,0.3);">#RootAccess</span>
+                <span class="tech-tag" style="color:#9fef00; border-color:rgba(159,239,0,0.3);">#CTF</span>
+              </div>
+            </div>
+
+            <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" rel="noopener noreferrer" class="btn btn-htb" style="width:100%;">
+              <span>Consulter le Profil HackTheBox</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="profile-card github-card">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                <div>
+                  <span style="color:#60a5fa; font-family:var(--font-mono); font-size:0.8rem; font-weight:700;">GITHUB REPOSITORIES</span>
+                  <h3 style="color:#f8fafc; font-size:1.4rem; font-weight:800; margin-top:0.2rem;">@abiyeenzo</h3>
+                </div>
+                <div style="width:48px; height:48px; background:#111b27; border:1px solid #3b82f6; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#60a5fa;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+              </div>
+
+              <p class="card-text" id="github-desc">
+                Hébergement des outils Python open-source, scripts d'analyse de sécurité, automatisations système et démonstrateurs de solutions créés par Abiye Enzo.
+              </p>
+
+              <div style="margin: 1.25rem 0; display:flex; flex-wrap:wrap; gap:0.5rem;">
+                <span class="tech-tag" style="color:#60a5fa; border-color:rgba(96,165,250,0.3);">#PythonScripts</span>
+                <span class="tech-tag" style="color:#60a5fa; border-color:rgba(96,165,250,0.3);">#Automation</span>
+                <span class="tech-tag" style="color:#60a5fa; border-color:rgba(96,165,250,0.3);">#SecurityTools</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/abiyeenzo" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width:100%; border-color:#3b82f6; color:#60a5fa;">
+              <span>Explorer les Dépôts GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Æ Corporation Banner -->
+      <section class="section" id="corporation">
+        <div class="corp-banner">
+          <div class="corp-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span id="tag-corp">ENTREPRISE & INNOVATION</span>
+          </div>
+
+          <h2 style="font-size:clamp(1.8rem, 4vw, 2.4rem); font-weight:900; margin-bottom:0.75rem;" id="title-corp">
+            Æ Corporation
+          </h2>
+
+          <p style="font-size:1.05rem; color:var(--text-secondary); max-width:800px; line-height:1.7;" id="desc-corp">
+            Fondée et dirigée par <strong>Abiye Enzo</strong>, Æ Corporation conçoit des solutions numériques à haute valeur ajoutée. Notre mission : apporter une sécurité intransigeante et des développements logiciels Python sur-mesure aux entreprises, startups et particuliers.
+          </p>
+
+          <div class="corp-services">
+            <div class="corp-service-item">
+              <h4 id="svc1-title">🛡️ Audit & Sécurité Offensive</h4>
+              <p id="svc1-desc">Évaluation minutieuse des vulnérabilités, tests d'intrusion ciblés et recommandations de durcissement.</p>
+            </div>
+            <div class="corp-service-item">
+              <h4 id="svc2-title">⚙️ Logiciels & Scripts Python</h4>
+              <p id="svc2-desc">Développement d'outils d'automatisation, microservices asynchrones et bots à haute disponibilité.</p>
+            </div>
+            <div class="corp-service-item">
+              <h4 id="svc3-title">🔒 Durcissement Système</h4>
+              <p id="svc3-desc">Optimisation de serveurs Linux, verrouillage des accès, pare-feu stricts et protocoles chiffrés.</p>
+            </div>
+            <div class="corp-service-item">
+              <h4 id="svc4-title">🤖 Intégration IA & Data</h4>
+              <p id="svc4-desc">Intégration d'architectures intelligentes et de traitement de données pour accélérer vos opérations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Books & Wattpad Section -->
+      <section class="section" id="books">
+        <div class="books-card">
+          <div>
+            <div class="section-tag" style="color:var(--accent-amber);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span id="tag-books">LITTÉRATURE & SCIENCE-FICTION</span>
+            </div>
+            <h2 style="font-size:1.8rem; font-weight:800; margin:0.4rem 0;" id="title-books">Livres, Récits SF & IA</h2>
+            <p style="color:var(--text-secondary); max-width:620px; line-height:1.6;" id="desc-books">
+              Passionné par la prospective technologique et la cybersécurité, Abiye Enzo publie des récits de science-fiction explorant l'intelligence artificielle, le cyber-espionnage et le destin de l'humanité face aux machines.
+            </p>
+          </div>
+
+          <a href="https://www.wattpad.com/user/abiye_enzo" target="_blank" rel="noopener noreferrer" class="btn" style="background-color:var(--accent-amber); color:#000; font-weight:700; white-space:nowrap;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.2 5.3c-.6-.7-1.4-1.1-2.4-1.1h-4.3c-1 0-1.8.4-2.4 1.1l-1.1 1.4L9.9 5.3C9.3 4.6 8.5 4.2 7.5 4.2H3.2C1.4 4.2 0 5.6 0 7.4v9.2c0 1.8 1.4 3.2 3.2 3.2h4.3c1 0 1.8-.4 2.4-1.1l1.1-1.4 1.1 1.4c.6.7 1.4 1.1 2.4 1.1h4.3c1.8 0 3.2-1.4 3.2-3.2V7.4c0-.8-.3-1.5-.8-2.1z"/></svg>
+            <span id="txt-read-wattpad">Lire sur Wattpad (@abiye_enzo)</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="contact-box">
+          <div class="section-tag" style="justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span id="tag-contact">TRANSMISSION SÉCURISÉE</span>
+          </div>
+
+          <h2 style="font-size:clamp(1.8rem, 3.5vw, 2.2rem); font-weight:800; margin:0.4rem 0;" id="title-contact">
+            Initier le Contact
+          </h2>
+
+          <p style="color:var(--text-secondary); max-width:550px; margin:0 auto; line-height:1.6;" id="desc-contact">
+            Besoin d'un audit de cybersécurité, d'un outil Python sur-mesure ou d'une collaboration technique avec Æ Corporation ? Envoyez directement un message.
+          </p>
+
+          <div>
+            <div class="contact-email-badge" onclick="copyText('abiyeenzo@gmail.com', 'Adresse Email')" title="Cliquez pour copier l'email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z"/></svg>
+              <span>abiyeenzo@gmail.com</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+            <a href="mailto:abiyeenzo@gmail.com?subject=Contact%20Pro%20-%20Abiye%20Enzo" class="btn btn-primary" id="btn-send-mail">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span id="txt-send-mail">Envoyer un Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-linkedin-contact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn Message</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <!-- POPUP -->
-  <div class="certificate-popup" id="popup" onclick="hideCertificate()">
-    <img id="popup-img" src="" alt="Certificat">
+  <!-- POPUP MODAL CERTIFICAT -->
+  <div class="certificate-popup" id="popup" onclick="handlePopupClick(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title" id="modal-cert-title">Certificat SoloLearn</span>
+        <button class="modal-close-btn" onclick="hideCertificate()" aria-label="Fermer la fenêtre">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="popup-img" src="" alt="Certificat Officiel SoloLearn" loading="lazy">
+      </div>
+    </div>
   </div>
 
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-message">Copié dans le presse-papier !</span>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="social-icons">
-      <a href="mailto:abiyeenzo@gmail.com"><img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" alt="Email"></a>
-      <a href="https://github.com/abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub"></a>
-      <a href="https://www.instagram.com/abiye_enzo" target="_blank"><img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/452234/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://www.youtube.com/@abiyeenzo" target="_blank"><img src="https://www.svgrepo.com/show/475700/youtube-color.svg" alt="YouTube"></a>
+    <div class="container footer-inner">
+      <div class="social-icons" style="display:flex; gap:1.25rem; align-items:center;">
+        <a href="https://app.hackthebox.com/profile/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="HackTheBox">
+          <svg viewBox="0 0 24 24"><path d="M11.996 0a1.107 1.107 0 0 0-.555.15L1.87 5.676a1.11 1.11 0 0 0-.555.961v10.726c0 .398.214.766.555.962l9.57 5.525c.344.198.767.198 1.11 0l9.57-5.525a1.11 1.11 0 0 0 .555-.962V6.637a1.11 1.11 0 0 0-.555-.961L12.55.15A1.107 1.107 0 0 0 11.996 0z"/></svg>
+          <span>HTB</span>
+        </a>
+        <a href="https://github.com/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/abiye_enzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/@abiyeenzo" target="_blank" rel="noopener noreferrer" class="social-pill" title="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Arsenal</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#profiles">HTB</a>
+        <a href="#corporation">Æ Corporation</a>
+        <a href="#books">Wattpad</a>
+        <a href="/llms.txt">llms.txt (AI)</a>
+      </div>
+
+      <div class="footer-signature">
+        &copy; <span id="year">2026</span> Abiye Gebresilassie Enzo Emmanuel — Tous droits réservés | Fondateur d'<strong>Æ Corporation</strong>
+      </div>
     </div>
-    <p>&copy; <span id="year"></span> Abiye Enzo. Tous droits réservés. | Æ Corporation</p>
   </footer>
 
+  <!-- Main Logic & Interactive Scripts -->
   <script>
-    // Popup Certificat
-    function showCertificate(src) {
-      document.getElementById('popup-img').src = src;
-      document.getElementById('popup').classList.add('active');
-    }
-    function hideCertificate() {
-      document.getElementById('popup').classList.remove('active');
-    }
-
-    // Date
+    // Set Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Thème
-    function toggleTheme() {
-      document.body.classList.toggle('light');
+    // Theme Management with localStorage
+    function initTheme() {
+      const savedTheme = localStorage.getItem('ae_theme') || 'dark';
+      if (savedTheme === 'light') {
+        document.body.classList.add('light');
+        document.getElementById('theme-icon').textContent = '🌙';
+      } else {
+        document.body.classList.remove('light');
+        document.getElementById('theme-icon').textContent = '☀️';
+      }
     }
 
-    // Langues
-    const texts = {
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+      const isLight = document.body.classList.contains('light');
+      localStorage.setItem('ae_theme', isLight ? 'light' : 'dark');
+      document.getElementById('theme-icon').textContent = isLight ? '🌙' : '☀️';
+      showToast(isLight ? 'Thème Clair activé' : 'Thème Sombre activé');
+    }
+
+    // Modal Certificate Viewer
+    function showCertificate(src, title) {
+      document.getElementById('popup-img').src = src;
+      document.getElementById('modal-cert-title').textContent = title || 'Certificat Officiel SoloLearn';
+      document.getElementById('popup').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideCertificate() {
+      document.getElementById('popup').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function handlePopupClick(e) {
+      if (e.target.id === 'popup') {
+        hideCertificate();
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') hideCertificate();
+    });
+
+    // Copy to Clipboard with Toast Notification
+    function copyText(text, label) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(`${label || text} copié !`);
+        }).catch(() => {
+          fallbackCopy(text, label);
+        });
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const el = document.createElement('textarea');
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      showToast(`${label || text} copié !`);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // Skills Filter
+    function filterSkills(category) {
+      const cards = document.querySelectorAll('.skill-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      cards.forEach(card => {
+        const cats = card.getAttribute('data-category') || '';
+        if (category === 'all' || cats.includes(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Terminal Emulator
+    const terminalInput = document.getElementById('terminal-input');
+    const termOutput = document.getElementById('term-output');
+
+    terminalInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        const cmd = this.value.trim().toLowerCase();
+        this.value = '';
+        if (cmd) executeCommand(cmd);
+      }
+    });
+
+    function executeCommand(cmd) {
+      const cleanCmd = cmd.trim().toLowerCase();
+      let response = '';
+
+      switch (cleanCmd) {
+        case 'whoami':
+          response = `<span style="color:#10b981;">$ whoami</span>\nIdentity: Abiye Gebresilassie Enzo Emmanuel\nKnown as: Abiye Enzo (@abiyeenzo)\nTitles: Professional Python Developer & Ethical Hacker\nCompany: Æ Corporation (Founder)\nLocation: Global Security & Python Infrastructure`;
+          break;
+        case 'skills':
+          response = `<span style="color:#10b981;">$ skills</span>\n[Core]: Python 3, Sockets, Asyncio, Scapy, Requests, Cryptography\n[Offensive]: Nmap, Burp Suite, Metasploit, Wireshark, Privilege Escalation\n[Systems]: Linux (Kali, Debian, Arch), Bash Scripting, Network Hardening\n[AI/Automation]: Web Scraping, Custom Security Tooling, API integration`;
+          break;
+        case 'certs':
+        case 'certifications':
+          response = `<span style="color:#10b981;">$ certs</span>\n- SoloLearn Python Beginner (ID: CT-VJCGY5YF)\n- SoloLearn Python Intermediate (ID: CC-EERCSI0B)\n- SoloLearn Python Developer (ID: CC-Z2AFUYEZ)\nAll certificates verified & accessible in the Certifications section.`;
+          break;
+        case 'htb':
+        case 'hackthebox':
+          response = `<span style="color:#9fef00;">$ htb --profile</span>\nTarget: HackTheBox (HTB)\nUsername: @abiyeenzo\nDirect link: https://app.hackthebox.com/profile/abiyeenzo\nFocus: Realistic CTFs, Linux system exploitation, Windows AD labs.`;
+          break;
+        case 'corp':
+        case 'ae-corp':
+          response = `<span style="color:#38bdf8;">$ ae-corp --info</span>\nOrganization: Æ Corporation\nFounder: Abiye Enzo\nServices: Offensive Security Audits, Custom Python Software, Infrastructure Hardening, Intelligent Automation.`;
+          break;
+        case 'books':
+        case 'wattpad':
+          response = `<span style="color:#f59e0b;">$ books --author abiye_enzo</span>\nPlatform: Wattpad (@abiye_enzo)\nGenres: Hard Sci-Fi, Cyberpunk, Artificial Intelligence, Cybersecurity\nDirect URL: https://www.wattpad.com/user/abiye_enzo`;
+          break;
+        case 'contact':
+        case 'email':
+          response = `<span style="color:#10b981;">$ contact</span>\nEmail: abiyeenzo@gmail.com\nLinkedIn: https://www.linkedin.com/in/abiyeenzo\nGitHub: https://github.com/abiyeenzo\nStatus: Available for security consultations & high-level Python tooling.`;
+          break;
+        case 'clear':
+          termOutput.innerHTML = `<span style="color: #38bdf8;">[+] Terminal cleared. Ready for commands.</span>`;
+          return;
+        case 'help':
+        default:
+          response = `<span style="color:#10b981;">$ ${cleanCmd}</span>\nAvailable commands: whoami, skills, certs, htb, corp, books, contact, clear`;
+          break;
+      }
+
+      termOutput.innerHTML += `\n\n${response}`;
+      termOutput.scrollTop = termOutput.scrollHeight;
+    }
+
+    // Comprehensive Bilingual Translations (FR / EN)
+    const i18n = {
       fr: {
-        title: "Abiye Gebresilassie Enzo Emmanuel",
-        subtitle: "Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation",
-        "about-title": "À propos",
-        "about-text": "Développeur Python expérimenté et passionné de cybersécurité, Abiye Enzo est fondateur d'Æ Corporation et conçoit des solutions fiables et performantes pour les entreprises et les particuliers. Avec une forte expertise en hacking éthique, en optimisation système et en développement d’outils techniques avancés, il propose des projets innovants, robustes et professionnels. Ses travaux sont partagés sur GitHub et HackTheBox afin de contribuer à la communauté et promouvoir les bonnes pratiques de cybersécurité.",
-        "cert-title": "Certifications",
-        "cert-text": "Cliquez sur une certification pour l’afficher :",
-        "books-title": "Livres & Histoires",
-        "books-text": "Récits SF et technologie, IA et cybersécurité :"
+        flag: "🇬🇧",
+        langLabel: "EN",
+        badgeText: "DISPONIBLE POUR AUDITS CYBER & PROJETS PYTHON",
+        heroSubtitle: "⚡ Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation",
+        heroLead: "Développeur Python chevronné et chercheur en cybersécurité offensive. Spécialisé dans la conception d'outils d'automatisation, la détection de vulnérabilités, l'ingénierie système et le durcissement d'infrastructures. Concepteur de solutions sur-mesure pour entreprises et particuliers via <strong>Æ Corporation</strong>.",
+        txtOpenTerm: "Ouvrir le Terminal",
+        txtViewCerts: "Certifications SoloLearn",
+        tagAbout: "PARCOURS & VISION",
+        titleAbout: "À propos d'Abiye Enzo",
+        descAbout: "Une approche rigoureuse alliant la puissance du code Python et l'exigence de la sécurité offensive.",
+        p1Title: "Sécurité Offensive & Hacking Éthique",
+        p1Desc: "Membre actif sur HackTheBox, Abiye analyse et éprouve la robustesse des systèmes. Recherche méthodique de vulnérabilités, analyse de vecteurs d'attaque, audit réseau et respect strict de l'éthique professionnelle.",
+        p2Title: "Ingénierie & Développement Python",
+        p2Desc: "Conception d'outils techniques pointus, de scripts d'automatisation réseau, de microservices asynchrones et d'applications hautement résilientes certifiées par SoloLearn au niveau Développeur.",
+        p3Title: "Fondateur d'Æ Corporation",
+        p3Desc: "Création d'une structure dédiée à la livraison de solutions de cybersécurité complètes, d'optimisation d'infrastructures et de briques logicielles robustes pour les professionnels et particuliers.",
+        tagSkills: "COMPÉTENCES TECHNIQUES",
+        titleSkills: "L'Arsenal Technique",
+        descSkills: "Un écosystème d'outils et de langages maîtrisés pour le développement, le reverse-engineering et la défense numérique.",
+        tagCerts: "QUALIFICATIONS OFFICIELLES",
+        titleCerts: "Certifications SoloLearn Vérifiées",
+        descCerts: "Chaque certificat atteste d'une maîtrise validée des paradigmes Python, du niveau fondamental à l'ingénierie avancée. Cliquez pour prévisualiser l'original ou copier l'identifiant de vérification.",
+        tagProfiles: "ACTIVITÉ OFFENSIVE & OPEN SOURCE",
+        titleProfiles: "HackTheBox & GitHub Hub",
+        descProfiles: "Découvrez les accomplissements sur la plateforme de cybersécurité HackTheBox et les dépôts de code partagés avec la communauté.",
+        htbDesc: "Entraînement continu sur machines virtuelles réalistes, résolution de CTFs, simulation d'attaques réseau et élévation de privilèges dans des environnements Linux et Windows durcis.",
+        githubDesc: "Hébergement des outils Python open-source, scripts d'analyse de sécurité, automatisations système et démonstrateurs de solutions créés par Abiye Enzo.",
+        tagCorp: "ENTREPRISE & INNOVATION",
+        titleCorp: "Æ Corporation",
+        descCorp: "Fondée et dirigée par <strong>Abiye Enzo</strong>, Æ Corporation conçoit des solutions numériques à haute valeur ajoutée. Notre mission : apporter une sécurité intransigeante et des développements logiciels Python sur-mesure aux entreprises, startups et particuliers.",
+        svc1Title: "🛡️ Audit & Sécurité Offensive",
+        svc1Desc: "Évaluation minutieuse des vulnérabilités, tests d'intrusion ciblés et recommandations de durcissement.",
+        svc2Title: "⚙️ Logiciels & Scripts Python",
+        svc2Desc: "Développement d'outils d'automatisation, microservices asynchrones et bots à haute disponibilité.",
+        svc3Title: "🔒 Durcissement Système",
+        svc3Desc: "Optimisation de serveurs Linux, verrouillage des accès, pare-feu stricts et protocoles chiffrés.",
+        svc4Title: "🤖 Intégration IA & Data",
+        svc4Desc: "Intégration d'architectures intelligentes et de traitement de données pour accélérer vos opérations.",
+        tagBooks: "LITTÉRATURE & SCIENCE-FICTION",
+        titleBooks: "Livres, Récits SF & IA",
+        descBooks: "Passionné par la prospective technologique et la cybersécurité, Abiye Enzo publie des récits de science-fiction explorant l'intelligence artificielle, le cyber-espionnage et le destin de l'humanité face aux machines.",
+        txtReadWattpad: "Lire sur Wattpad (@abiye_enzo)",
+        tagContact: "TRANSMISSION SÉCURISÉE",
+        titleContact: "Initier le Contact",
+        descContact: "Besoin d'un audit de cybersécurité, d'un outil Python sur-mesure ou d'une collaboration technique avec Æ Corporation ? Envoyez directement un message.",
+        txtSendMail: "Envoyer un Email"
       },
       en: {
-        title: "Abiye Gebresilassie Enzo Emmanuel",
-        subtitle: "Professional Hacker & Python Developer | Founder of Æ Corporation",
-        "about-title": "About",
-        "about-text": "Experienced Python developer and cybersecurity enthusiast. Abiye Enzo is founder of Æ Corporation and designs reliable, high-performance solutions for businesses and individuals. With strong expertise in ethical hacking, system optimization, and advanced technical tool development, he delivers innovative, robust, and professional projects. His work is shared on GitHub and HackTheBox to contribute to the community and promote best cybersecurity practices.",
-        "cert-title": "Certifications",
-        "cert-text": "Click a certification to view:",
-        "books-title": "Books & Stories",
-        "books-text": "Sci-fi tales on technology, AI, and cybersecurity:"
+        flag: "🇫🇷",
+        langLabel: "FR",
+        badgeText: "AVAILABLE FOR SECURITY AUDITS & PYTHON PROJECTS",
+        heroSubtitle: "⚡ Professional Hacker & Python Developer | Founder of Æ Corporation",
+        heroLead: "Seasoned Python developer and offensive cybersecurity researcher. Specialized in crafting automation tooling, vulnerability assessment, system engineering, and infrastructure hardening. Designing tailored solutions for enterprises and individuals via <strong>Æ Corporation</strong>.",
+        txtOpenTerm: "Open Interactive Terminal",
+        txtViewCerts: "SoloLearn Certifications",
+        tagAbout: "CAREER & VISION",
+        titleAbout: "About Abiye Enzo",
+        descAbout: "A rigorous engineering mindset combining Python software craftsmanship with offensive cybersecurity excellence.",
+        p1Title: "Offensive Security & Ethical Hacking",
+        p1Desc: "Active HackTheBox member testing system resilience. Methodical vulnerability research, attack vector analysis, network auditing, and strict adherence to cybersecurity ethics.",
+        p2Title: "Python Engineering & Automation",
+        p2Desc: "Architecting high-level technical tools, socket networking scripts, asynchronous microservices, and resilient applications validated by SoloLearn at Developer level.",
+        p3Title: "Founder of Æ Corporation",
+        p3Desc: "Establishing a trusted organization dedicated to delivering end-to-end cybersecurity solutions, infrastructure optimization, and hardened software packages.",
+        tagSkills: "TECHNICAL CAPABILITIES",
+        titleSkills: "The Technical Arsenal",
+        descSkills: "A battle-tested stack of languages and security tools for backend development, reverse engineering, and digital defense.",
+        tagCerts: "OFFICIAL CREDENTIALS",
+        titleCerts: "Verified SoloLearn Certifications",
+        descCerts: "Each certificate proves verified mastery of Python paradigms, from algorithmic foundations to full software developer certification. Click to view high-res original or copy credential ID.",
+        tagProfiles: "OFFENSIVE ACTIVITY & OPEN SOURCE",
+        titleProfiles: "HackTheBox & GitHub Command Hub",
+        descProfiles: "Explore real-world challenges solved on HackTheBox and open-source Python code repositories contributed to the tech community.",
+        htbDesc: "Continuous hands-on training on realistic virtual targets, CTF challenges, network attack simulation, and privilege escalation on hardened Linux and Windows environments.",
+        githubDesc: "Open-source Python security tools, network automation scripts, and hardened system solutions developed by Abiye Enzo.",
+        tagCorp: "ENTERPRISE & INNOVATION",
+        titleCorp: "Æ Corporation",
+        descCorp: "Founded and spearheaded by <strong>Abiye Enzo</strong>, Æ Corporation delivers high-assurance digital solutions. Our mission: uncompromising cybersecurity posture and custom Python software engineering for businesses and individuals.",
+        svc1Title: "🛡️ Offensive Security Audits",
+        svc1Desc: "Deep vulnerability assessments, targeted penetration testing, and actionable remediation roadmaps.",
+        svc2Title: "⚙️ Custom Python Software",
+        svc2Desc: "Bespoke automation tools, asynchronous APIs, scrapers, and high-availability background workers.",
+        svc3Title: "🔒 System & Network Hardening",
+        svc3Desc: "Linux server security hardening, zero-trust configurations, strict firewalls, and encrypted tunnels.",
+        svc4Title: "🤖 AI Integration & Data",
+        svc4Desc: "Integrating smart model pipelines and automated log parsing to supercharge operational efficiency.",
+        tagBooks: "LITERATURE & SCIENCE-FICTION",
+        titleBooks: "Books, Sci-Fi Stories & AI",
+        descBooks: "Fascinated by technological foresight and cyber warfare, Abiye Enzo crafts speculative fiction on Wattpad exploring artificial intelligence, cyber-espionage, and human destiny.",
+        txtReadWattpad: "Read on Wattpad (@abiye_enzo)",
+        tagContact: "SECURE TRANSMISSION",
+        titleContact: "Initiate Transmission",
+        descContact: "Need a cybersecurity audit, bespoke Python software, or technical collaboration with Æ Corporation? Send a direct transmission.",
+        txtSendMail: "Send an Email"
       }
     };
 
-    let currentLang = "fr";
-    function toggleLang() {
-      currentLang = currentLang === "fr" ? "en" : "fr";
-      for (let id in texts[currentLang]) {
-        document.getElementById(id).textContent = texts[currentLang][id];
-      }
+    let currentLang = localStorage.getItem('ae_lang') || 'fr';
+
+    function applyLanguage(lang) {
+      const t = i18n[lang];
+      if (!t) return;
+
+      document.getElementById('lang-flag').textContent = t.flag;
+      document.getElementById('lang-label').textContent = t.langLabel;
+      document.getElementById('badge-text').textContent = t.badgeText;
+      document.getElementById('hero-subtitle').innerHTML = t.heroSubtitle;
+      document.getElementById('hero-lead').innerHTML = t.heroLead;
+      document.getElementById('txt-open-term').textContent = t.txtOpenTerm;
+      document.getElementById('txt-view-certs').textContent = t.txtViewCerts;
+
+      document.getElementById('tag-about').textContent = t.tagAbout;
+      document.getElementById('title-about').textContent = t.titleAbout;
+      document.getElementById('desc-about').textContent = t.descAbout;
+      document.getElementById('p1-title').textContent = t.p1Title;
+      document.getElementById('p1-desc').textContent = t.p1Desc;
+      document.getElementById('p2-title').textContent = t.p2Title;
+      document.getElementById('p2-desc').textContent = t.p2Desc;
+      document.getElementById('p3-title').textContent = t.p3Title;
+      document.getElementById('p3-desc').textContent = t.p3Desc;
+
+      document.getElementById('tag-skills').textContent = t.tagSkills;
+      document.getElementById('title-skills').textContent = t.titleSkills;
+      document.getElementById('desc-skills').textContent = t.descSkills;
+
+      document.getElementById('tag-certs').textContent = t.tagCerts;
+      document.getElementById('title-certs').textContent = t.titleCerts;
+      document.getElementById('desc-certs').textContent = t.descCerts;
+
+      document.getElementById('tag-profiles').textContent = t.tagProfiles;
+      document.getElementById('title-profiles').textContent = t.titleProfiles;
+      document.getElementById('desc-profiles').textContent = t.descProfiles;
+      document.getElementById('htb-desc').textContent = t.htbDesc;
+      document.getElementById('github-desc').textContent = t.githubDesc;
+
+      document.getElementById('tag-corp').textContent = t.tagCorp;
+      document.getElementById('title-corp').textContent = t.titleCorp;
+      document.getElementById('desc-corp').innerHTML = t.descCorp;
+      document.getElementById('svc1-title').textContent = t.svc1Title;
+      document.getElementById('svc1-desc').textContent = t.svc1Desc;
+      document.getElementById('svc2-title').textContent = t.svc2Title;
+      document.getElementById('svc2-desc').textContent = t.svc2Desc;
+      document.getElementById('svc3-title').textContent = t.svc3Title;
+      document.getElementById('svc3-desc').textContent = t.svc3Desc;
+      document.getElementById('svc4-title').textContent = t.svc4Title;
+      document.getElementById('svc4-desc').textContent = t.svc4Desc;
+
+      document.getElementById('tag-books').textContent = t.tagBooks;
+      document.getElementById('title-books').textContent = t.titleBooks;
+      document.getElementById('desc-books').textContent = t.descBooks;
+      document.getElementById('txt-read-wattpad').textContent = t.txtReadWattpad;
+
+      document.getElementById('tag-contact').textContent = t.tagContact;
+      document.getElementById('title-contact').textContent = t.titleContact;
+      document.getElementById('desc-contact').textContent = t.descContact;
+      document.getElementById('txt-send-mail').textContent = t.txtSendMail;
+
+      document.documentElement.lang = lang;
     }
+
+    function toggleLang() {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      localStorage.setItem('ae_lang', currentLang);
+      applyLanguage(currentLang);
+      showToast(currentLang === 'fr' ? 'Langue changée en Français' : 'Language switched to English');
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      applyLanguage(currentLang);
+    });
   </script>
 
+  <!-- External SEO & AI Graph Script -->
   <script src="/scripts/seo.js"></script>
 </body>
 </html>
