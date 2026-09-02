@@ -895,17 +895,34 @@ body.light .cert-id-box {
   border: 1px solid var(--border-subtle);
   padding: 1.25rem;
   border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 body.light .corp-service-item {
   background: rgba(255, 255, 255, 0.7);
 }
 
+.corp-service-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.corp-service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-emerald);
+  flex-shrink: 0;
+}
+
 .corp-service-item h4 {
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.4rem;
+  margin: 0;
 }
 
 .corp-service-item p {

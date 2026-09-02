@@ -110,11 +110,14 @@
 
       <div class="nav-controls">
         <button class="control-btn" id="lang-btn" onclick="toggleLang()" aria-label="Changer de langue (FR / EN)">
-          <span id="lang-flag">🇬🇧</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="lang-svg-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
           <span id="lang-label">EN</span>
         </button>
         <button class="control-btn" id="theme-btn" onclick="toggleTheme()" aria-label="Basculer thème clair ou sombre">
-          <span id="theme-icon">☀️</span>
+          <span id="theme-icon-container">
+            <!-- SVG Icon populated dynamically via updateThemeIcon() -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
         </button>
       </div>
     </div>
@@ -134,7 +137,8 @@
         </h1>
 
         <div class="hero-subtitle" id="hero-subtitle">
-          ⚡ Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-emerald);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <span id="hero-subtitle-text">Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation</span>
         </div>
 
         <p class="hero-lead" id="hero-lead">
@@ -574,19 +578,42 @@
 
           <div class="corp-services">
             <div class="corp-service-item">
-              <h4 id="svc1-title">🛡️ Audit & Sécurité Offensive</h4>
+              <div class="corp-service-header">
+                <span class="corp-service-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </span>
+                <h4 id="svc1-title">Audit & Sécurité Offensive</h4>
+              </div>
               <p id="svc1-desc">Évaluation minutieuse des vulnérabilités, tests d'intrusion ciblés et recommandations de durcissement.</p>
             </div>
+
             <div class="corp-service-item">
-              <h4 id="svc2-title">⚙️ Logiciels & Scripts Python</h4>
+              <div class="corp-service-header">
+                <span class="corp-service-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </span>
+                <h4 id="svc2-title">Logiciels & Scripts Python</h4>
+              </div>
               <p id="svc2-desc">Développement d'outils d'automatisation, microservices asynchrones et bots à haute disponibilité.</p>
             </div>
+
             <div class="corp-service-item">
-              <h4 id="svc3-title">🔒 Durcissement Système</h4>
+              <div class="corp-service-header">
+                <span class="corp-service-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </span>
+                <h4 id="svc3-title">Durcissement Système</h4>
+              </div>
               <p id="svc3-desc">Optimisation de serveurs Linux, verrouillage des accès, pare-feu stricts et protocoles chiffrés.</p>
             </div>
+
             <div class="corp-service-item">
-              <h4 id="svc4-title">🤖 Intégration IA & Data</h4>
+              <div class="corp-service-header">
+                <span class="corp-service-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </span>
+                <h4 id="svc4-title">Intégration IA & Data</h4>
+              </div>
               <p id="svc4-desc">Intégration d'architectures intelligentes et de traitement de données pour accélérer vos opérations.</p>
             </div>
           </div>
@@ -719,24 +746,58 @@
     // Set Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Theme Management with localStorage
+    // Theme Management: Auto-detects device/phone system preference, supports user toggle & persistence
+    function getSystemTheme() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    }
+
+    function updateThemeIcon(isLight) {
+      const container = document.getElementById('theme-icon-container');
+      if (!container) return;
+      if (isLight) {
+        // Moon SVG icon for light theme (clicking will switch to dark)
+        container.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+      } else {
+        // Sun SVG icon for dark theme (clicking will switch to light)
+        container.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+      }
+    }
+
     function initTheme() {
-      const savedTheme = localStorage.getItem('ae_theme') || 'dark';
-      if (savedTheme === 'light') {
+      const savedTheme = localStorage.getItem('ae_theme');
+      const activeTheme = savedTheme || getSystemTheme();
+
+      if (activeTheme === 'light') {
         document.body.classList.add('light');
-        document.getElementById('theme-icon').textContent = '🌙';
+        document.documentElement.classList.remove('dark');
+        updateThemeIcon(true);
       } else {
         document.body.classList.remove('light');
-        document.getElementById('theme-icon').textContent = '☀️';
+        document.documentElement.classList.add('dark');
+        updateThemeIcon(false);
       }
     }
 
     function toggleTheme() {
       document.body.classList.toggle('light');
       const isLight = document.body.classList.contains('light');
+      if (isLight) {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
       localStorage.setItem('ae_theme', isLight ? 'light' : 'dark');
-      document.getElementById('theme-icon').textContent = isLight ? '🌙' : '☀️';
-      showToast(isLight ? 'Thème Clair activé' : 'Thème Sombre activé');
+      updateThemeIcon(isLight);
+      showToast(isLight ? (currentLang === 'fr' ? 'Thème Clair activé' : 'Light Theme enabled') : (currentLang === 'fr' ? 'Thème Sombre activé' : 'Dark Theme enabled'));
+    }
+
+    // Live listener if the device or phone switches light/dark mode automatically
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('ae_theme')) {
+          initTheme();
+        }
+      });
     }
 
     // Modal Certificate Viewer
@@ -871,10 +932,9 @@
     // Comprehensive Bilingual Translations (FR / EN)
     const i18n = {
       fr: {
-        flag: "🇬🇧",
         langLabel: "EN",
         badgeText: "DISPONIBLE POUR AUDITS CYBER & PROJETS PYTHON",
-        heroSubtitle: "⚡ Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation",
+        heroSubtitle: "Hacker Professionnel & Développeur Python | Fondateur d'Æ Corporation",
         heroLead: "Développeur Python chevronné et chercheur en cybersécurité offensive. Spécialisé dans la conception d'outils d'automatisation, la détection de vulnérabilités, l'ingénierie système et le durcissement d'infrastructures. Concepteur de solutions sur-mesure pour entreprises et particuliers via <strong>Æ Corporation</strong>.",
         txtOpenTerm: "Ouvrir le Terminal",
         txtViewCerts: "Certifications SoloLearn",
@@ -901,13 +961,13 @@
         tagCorp: "ENTREPRISE & INNOVATION",
         titleCorp: "Æ Corporation",
         descCorp: "Fondée et dirigée par <strong>Abiye Enzo</strong>, Æ Corporation conçoit des solutions numériques à haute valeur ajoutée. Notre mission : apporter une sécurité intransigeante et des développements logiciels Python sur-mesure aux entreprises, startups et particuliers.",
-        svc1Title: "🛡️ Audit & Sécurité Offensive",
+        svc1Title: "Audit & Sécurité Offensive",
         svc1Desc: "Évaluation minutieuse des vulnérabilités, tests d'intrusion ciblés et recommandations de durcissement.",
-        svc2Title: "⚙️ Logiciels & Scripts Python",
+        svc2Title: "Logiciels & Scripts Python",
         svc2Desc: "Développement d'outils d'automatisation, microservices asynchrones et bots à haute disponibilité.",
-        svc3Title: "🔒 Durcissement Système",
+        svc3Title: "Durcissement Système",
         svc3Desc: "Optimisation de serveurs Linux, verrouillage des accès, pare-feu stricts et protocoles chiffrés.",
-        svc4Title: "🤖 Intégration IA & Data",
+        svc4Title: "Intégration IA & Data",
         svc4Desc: "Intégration d'architectures intelligentes et de traitement de données pour accélérer vos opérations.",
         tagBooks: "LITTÉRATURE & SCIENCE-FICTION",
         titleBooks: "Livres, Récits SF & IA",
@@ -919,10 +979,9 @@
         txtSendMail: "Envoyer un Email"
       },
       en: {
-        flag: "🇫🇷",
         langLabel: "FR",
         badgeText: "AVAILABLE FOR SECURITY AUDITS & PYTHON PROJECTS",
-        heroSubtitle: "⚡ Professional Hacker & Python Developer | Founder of Æ Corporation",
+        heroSubtitle: "Professional Hacker & Python Developer | Founder of Æ Corporation",
         heroLead: "Seasoned Python developer and offensive cybersecurity researcher. Specialized in crafting automation tooling, vulnerability assessment, system engineering, and infrastructure hardening. Designing tailored solutions for enterprises and individuals via <strong>Æ Corporation</strong>.",
         txtOpenTerm: "Open Interactive Terminal",
         txtViewCerts: "SoloLearn Certifications",
@@ -949,13 +1008,13 @@
         tagCorp: "ENTERPRISE & INNOVATION",
         titleCorp: "Æ Corporation",
         descCorp: "Founded and spearheaded by <strong>Abiye Enzo</strong>, Æ Corporation delivers high-assurance digital solutions. Our mission: uncompromising cybersecurity posture and custom Python software engineering for businesses and individuals.",
-        svc1Title: "🛡️ Offensive Security Audits",
+        svc1Title: "Offensive Security Audits",
         svc1Desc: "Deep vulnerability assessments, targeted penetration testing, and actionable remediation roadmaps.",
-        svc2Title: "⚙️ Custom Python Software",
+        svc2Title: "Custom Python Software",
         svc2Desc: "Bespoke automation tools, asynchronous APIs, scrapers, and high-availability background workers.",
-        svc3Title: "🔒 System & Network Hardening",
+        svc3Title: "System & Network Hardening",
         svc3Desc: "Linux server security hardening, zero-trust configurations, strict firewalls, and encrypted tunnels.",
-        svc4Title: "🤖 AI Integration & Data",
+        svc4Title: "AI Integration & Data",
         svc4Desc: "Integrating smart model pipelines and automated log parsing to supercharge operational efficiency.",
         tagBooks: "LITERATURE & SCIENCE-FICTION",
         titleBooks: "Books, Sci-Fi Stories & AI",
@@ -974,10 +1033,10 @@
       const t = i18n[lang];
       if (!t) return;
 
-      document.getElementById('lang-flag').textContent = t.flag;
       document.getElementById('lang-label').textContent = t.langLabel;
       document.getElementById('badge-text').textContent = t.badgeText;
-      document.getElementById('hero-subtitle').innerHTML = t.heroSubtitle;
+      const subtitleTextEl = document.getElementById('hero-subtitle-text');
+      if (subtitleTextEl) subtitleTextEl.textContent = t.heroSubtitle;
       document.getElementById('hero-lead').innerHTML = t.heroLead;
       document.getElementById('txt-open-term').textContent = t.txtOpenTerm;
       document.getElementById('txt-view-certs').textContent = t.txtViewCerts;
