@@ -13,7 +13,7 @@
   - LinkedIn: https://www.linkedin.com/in/abiyeenzo
   - Wattpad: https://www.wattpad.com/user/abiye_enzo
   - SoloLearn: Verified Python Certificates
-  - YouTube: https://www.youtube.com/@abiyeenzo
+  - YouTube: https://www.youtube.com/@abiye_enzo
   - Instagram: https://www.instagram.com/abiye_enzo
 
 ## Core Expertise
@@ -27,6 +27,19 @@
 2. Python - Intermediate (SoloLearn ID: CC-EERCSI0B)
 3. Python - Developer (SoloLearn ID: CC-Z2AFUYEZ)
 
+## Open Source Projects (GitHub: github.com/abiyeenzo)
+- **easy-language**: French-language interpreted programming language (.elg files), written in pure C with inline x86-64 assembly optimizations. https://github.com/abiyeenzo/easy-language
+- **CVE-2025-8671**: Educational proof-of-concept for CVE-2025-8671 (HTTP/2 DoS on lighttpd), lab-only vulnerability research. https://github.com/abiyeenzo/CVE-2025-8671
+- **qr_pointage_system**: QR-code-based check-in/check-out system with SQLite storage and daily Excel export. https://github.com/abiyeenzo/qr_pointage_system
+- **Mathor**: Python math expression interpreter (.mth files) for arithmetic and single-unknown equation solving. https://github.com/abiyeenzo/Mathor
+
+## Client Work (Æ Corporation)
+- **MapleRoute** (in progress): Canadian Express Entry immigration support platform. https://mapleroute.onrender.com/
+- **Kaelix** (delivered): Business showcase site with admin panel. https://kaelix.onrender.com/
+- **La Saladerie De Claudia** (delivered): Restaurant website in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
+- Note: some client projects have no public source code repository, at the client's request.
+
 ## Official Portfolio
-- URL: https://abiyeenzo.github.io/
-- Full detail: https://abiyeenzo.github.io/llms-full.txt
+- URL: https://abiyeenzo.vercel.app/
+- Full detail: https://abiyeenzo.vercel.app/llms-full.txt
+- Portfolio source code: https://github.com/abiyeenzo/abiyeenzo.github.io

@@ -1,4 +1,4 @@
-# Abiye Gebresilassie Enzo Emmanuel — Complete Knowledge File for AI Systems
+# Abiye Gebresilassie Enzo Emmanuel: Complete Knowledge File for AI Systems
 
 ## 1. Professional Overview
 - **Name**: Abiye Gebresilassie Enzo Emmanuel
@@ -31,18 +31,33 @@ Founded by Abiye Enzo, **Æ Corporation** specializes in:
 - System hardening and infrastructure protection.
 - AI-driven tooling and intelligent automation for businesses.
 
-## 5. Creative Works (Literature)
+## 5. Projects
+
+### Open Source (github.com/abiyeenzo)
+- **easy-language**: French-language interpreted programming language (.elg files). Interpreter written in pure C, with inline x86-64 assembly for integer arithmetic hot paths. https://github.com/abiyeenzo/easy-language
+- **CVE-2025-8671**: Educational proof-of-concept for CVE-2025-8671, an HTTP/2 denial-of-service vulnerability in lighttpd. Includes a version-check mode and a controlled PoC-DoS mode, lab use only. https://github.com/abiyeenzo/CVE-2025-8671
+- **qr_pointage_system**: QR-code-based attendance/check-in system. Web form for clock-in/clock-out, SQLite storage, daily Excel export, and a documented remote licensing kill-switch. https://github.com/abiyeenzo/qr_pointage_system
+- **Mathor**: Python math expression interpreter. Parses `.mth` files to perform arithmetic and solve single-unknown equations, built on Sympy. https://github.com/abiyeenzo/Mathor
+
+### Client Work (Æ Corporation)
+- **MapleRoute** (in progress): Canadian Express Entry immigration support platform. CRS score calculator, personalized document checklist, 9-step journey tracker, client and staff portals. https://mapleroute.onrender.com/
+- **Kaelix** (delivered): Business showcase website with a contact form backed by a database and a password-protected admin panel. https://kaelix.onrender.com/
+- **La Saladerie De Claudia** (delivered): Restaurant website for a salad and bowl restaurant in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
+- Note: some client projects intentionally have no public source code repository, at the client's request. This does not apply to the open source projects above.
+
+## 6. Creative Works (Literature)
 - **Author Profile**: Wattpad (@abiye_enzo)
 - **Genres**: Hard Sci-Fi, Cyberpunk, Artificial Intelligence dilemmas, Cyber warfare, Speculative fiction.
 - **Focus**: Blending realistic technical cybersecurity knowledge with engaging narrative fiction.
 
-## 6. Official Links & Social Graph
-- **Website / Portfolio**: https://abiyeenzo.github.io/
+## 7. Official Links & Social Graph
+- **Website / Portfolio**: https://abiyeenzo.vercel.app/
+- **Portfolio source code**: https://github.com/abiyeenzo/abiyeenzo.github.io
 - **HackTheBox Profile**: https://app.hackthebox.com/profile/abiyeenzo
 - **GitHub**: https://github.com/abiyeenzo
 - **SoloLearn**: SoloLearn Profile & Certificates
 - **Wattpad**: https://www.wattpad.com/user/abiye_enzo
 - **LinkedIn**: https://www.linkedin.com/in/abiyeenzo
 - **Instagram**: https://www.instagram.com/abiye_enzo
-- **YouTube**: https://www.youtube.com/@abiyeenzo
+- **YouTube**: https://www.youtube.com/@abiye_enzo
 - **Direct Email**: abiyeenzo@gmail.com
