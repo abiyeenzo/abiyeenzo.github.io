@@ -36,8 +36,11 @@
 ## Client Work (Æ Corporation)
 - **MapleRoute** (in progress): Canadian Express Entry immigration support platform. https://mapleroute.onrender.com/
 - **Kaelix** (delivered): Business showcase site with admin panel. https://kaelix.onrender.com/
-- **La Saladerie De Claudia** (delivered): Restaurant website in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
+- **La Saladerie De Claudia** (delivered): Restaurant website for La Saladerie De Claudia in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
 - Note: some client projects have no public source code repository, at the client's request.
+
+## Products / SaaS (Æ Corporation)
+- **NJANGUI+**: Participatory financing platform (digital tontine) with Mobile Money payments via Notch Pay. https://njangui-plus.onrender.com/
 
 ## Official Portfolio
 - URL: https://abiyeenzo.vercel.app/

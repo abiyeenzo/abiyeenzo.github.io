@@ -407,6 +407,7 @@
           <button class="filter-btn active" onclick="filterProjects('all')" id="btn-filter-projects-all">Tous</button>
           <button class="filter-btn" onclick="filterProjects('opensource')" id="btn-filter-projects-oss">Open Source</button>
           <button class="filter-btn" onclick="filterProjects('client')" id="btn-filter-projects-client">Projets Clients</button>
+          <button class="filter-btn" onclick="filterProjects('product')" id="btn-filter-projects-product">Produits & SaaS</button>
         </div>
 
         <div class="project-grid" id="projects-grid">
@@ -545,7 +546,7 @@
                 <span class="project-name">La Saladerie De Claudia</span>
                 <span class="project-badge project-badge-done" id="badge-status-3">Livré</span>
               </div>
-              <p class="card-text">Site web pour un restaurant de salades et bowls à Douala : présentation du menu, structure responsive et expérience utilisateur soignée.</p>
+              <p class="card-text">Site web du restaurant La Saladerie De Claudia à Douala, spécialisé en salades signature et bowls : présentation du menu, structure responsive et expérience utilisateur soignée.</p>
               <div class="skill-tags">
                 <span class="tech-tag">HTML</span>
                 <span class="tech-tag">CSS</span>
@@ -559,6 +560,29 @@
               </a>
             </div>
             <p class="project-note" id="note-client-3">Projet client, code source privé.</p>
+          </div>
+
+          <!-- NJANGUI+ (produit / SaaS) -->
+          <div class="project-card" data-category="product">
+            <div>
+              <div class="project-header">
+                <span class="project-name">NJANGUI+</span>
+                <span class="project-badge project-badge-product" id="badge-status-4">SaaS</span>
+              </div>
+              <p class="card-text">Plateforme de financement participatif (tontine digitale) avec paiements Mobile Money via Notch Pay. Produit Æ Corporation.</p>
+              <div class="skill-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Notch Pay</span>
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a href="https://njangui-plus.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-cert">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span id="txt-view-site-4">Voir le site</span>
+              </a>
+            </div>
+            <p class="project-note" id="note-client-4">Produit Æ Corporation, code source privé.</p>
           </div>
         </div>
       </section>
@@ -1092,7 +1116,7 @@
           response = `<span style="color:#10b981;">$ skills</span>\n[Core]: Python 3, Sockets, Asyncio, Scapy, Requests, Cryptography\n[Offensive]: Nmap, Burp Suite, Metasploit, Wireshark, Privilege Escalation\n[Systems]: Linux (Kali, Debian, Arch), Bash Scripting, Network Hardening\n[AI/Automation]: Web Scraping, Custom Security Tooling, API integration`;
           break;
         case 'projects':
-          response = `<span style="color:#10b981;">$ projects</span>\n[Open Source]: easy-language, CVE-2025-8671, qr_pointage_system, Mathor (github.com/abiyeenzo)\n[Client work]: MapleRoute (in progress), Kaelix (delivered), La Saladerie De Claudia (delivered)\nNote: some client projects have no public source repo, by client request.`;
+          response = `<span style="color:#10b981;">$ projects</span>\n[Open Source]: easy-language, CVE-2025-8671, qr_pointage_system, Mathor (github.com/abiyeenzo)\n[Client work]: MapleRoute (in progress), Kaelix (delivered), La Saladerie De Claudia (delivered)\n[Products/SaaS]: NJANGUI+ (Æ Corporation)\nNote: client and product projects have no public source repo, by request or by design.`;
           break;
         case 'certs':
         case 'certifications':
@@ -1154,11 +1178,13 @@
         btnFilterProjectsAll: "Tous",
         btnFilterProjectsOss: "Open Source",
         btnFilterProjectsClient: "Projets Clients",
+        btnFilterProjectsProduct: "Produits & SaaS",
         txtViewCode: "Code source",
         txtViewSite: "Voir le site",
         statusInProgress: "En cours",
         statusDelivered: "Livré",
         noteClientPrivate: "Projet client, code source privé.",
+        noteProductPrivate: "Produit Æ Corporation, code source privé.",
         tagCerts: "QUALIFICATIONS OFFICIELLES",
         titleCerts: "Certifications SoloLearn Vérifiées",
         descCerts: "Chaque certificat atteste d'une maîtrise validée des paradigmes Python, du niveau fondamental à l'ingénierie avancée. Cliquez pour prévisualiser l'original ou copier l'identifiant de vérification.",
@@ -1212,11 +1238,13 @@
         btnFilterProjectsAll: "All",
         btnFilterProjectsOss: "Open Source",
         btnFilterProjectsClient: "Client Projects",
+        btnFilterProjectsProduct: "Products & SaaS",
         txtViewCode: "View source",
         txtViewSite: "View site",
         statusInProgress: "In progress",
         statusDelivered: "Delivered",
         noteClientPrivate: "Client project, private source code.",
+        noteProductPrivate: "Æ Corporation product, private source code.",
         tagCerts: "OFFICIAL CREDENTIALS",
         titleCerts: "Verified SoloLearn Certifications",
         descCerts: "Each certificate proves verified mastery of Python paradigms, from algorithmic foundations to full software developer certification. Click to view high-res original or copy credential ID.",
@@ -1281,6 +1309,7 @@
       document.getElementById('btn-filter-projects-all').textContent = t.btnFilterProjectsAll;
       document.getElementById('btn-filter-projects-oss').textContent = t.btnFilterProjectsOss;
       document.getElementById('btn-filter-projects-client').textContent = t.btnFilterProjectsClient;
+      document.getElementById('btn-filter-projects-product').textContent = t.btnFilterProjectsProduct;
       ['1', '2', '3', '4'].forEach(n => {
         const el = document.getElementById('txt-view-code-' + n);
         if (el) el.textContent = t.txtViewCode;
@@ -1291,6 +1320,10 @@
         const noteEl = document.getElementById('note-client-' + n);
         if (noteEl) noteEl.textContent = t.noteClientPrivate;
       });
+      const site4 = document.getElementById('txt-view-site-4');
+      if (site4) site4.textContent = t.txtViewSite;
+      const note4 = document.getElementById('note-client-4');
+      if (note4) note4.textContent = t.noteProductPrivate;
       document.getElementById('badge-status-1').textContent = t.statusInProgress;
       document.getElementById('badge-status-2').textContent = t.statusDelivered;
       document.getElementById('badge-status-3').textContent = t.statusDelivered;

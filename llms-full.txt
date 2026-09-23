@@ -42,8 +42,11 @@ Founded by Abiye Enzo, **Æ Corporation** specializes in:
 ### Client Work (Æ Corporation)
 - **MapleRoute** (in progress): Canadian Express Entry immigration support platform. CRS score calculator, personalized document checklist, 9-step journey tracker, client and staff portals. https://mapleroute.onrender.com/
 - **Kaelix** (delivered): Business showcase website with a contact form backed by a database and a password-protected admin panel. https://kaelix.onrender.com/
-- **La Saladerie De Claudia** (delivered): Restaurant website for a salad and bowl restaurant in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
+- **La Saladerie De Claudia** (delivered): Restaurant website for La Saladerie De Claudia, a salad and bowl restaurant in Douala, Cameroon. https://la-saladerie-de-claudia.vercel.app/
 - Note: some client projects intentionally have no public source code repository, at the client's request. This does not apply to the open source projects above.
+
+### Products / SaaS (Æ Corporation)
+- **NJANGUI+**: Participatory financing platform (digital tontine), PHP 8.2 / PostgreSQL, with Mobile Money payments via Notch Pay. An Æ Corporation product, source code private. https://njangui-plus.onrender.com/
 
 ## 6. Creative Works (Literature)
 - **Author Profile**: Wattpad (@abiye_enzo)

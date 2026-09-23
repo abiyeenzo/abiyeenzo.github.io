@@ -185,8 +185,16 @@
         "@type": "WebSite",
         "@id": "https://abiyeenzo.vercel.app/#project-saladerie",
         "name": "La Saladerie De Claudia",
-        "description": "Site web pour un restaurant de salades et bowls à Douala. Projet client livré, code source privé.",
+        "description": "Site web du restaurant La Saladerie De Claudia à Douala. Projet client livré, code source privé.",
         "url": "https://la-saladerie-de-claudia.vercel.app/",
+        "creator": { "@id": "https://abiyeenzo.vercel.app/#person" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://abiyeenzo.vercel.app/#project-njangui",
+        "name": "NJANGUI+",
+        "description": "Plateforme de financement participatif (tontine digitale) avec paiements Mobile Money via Notch Pay. Produit Æ Corporation, code source privé.",
+        "url": "https://njangui-plus.onrender.com/",
         "creator": { "@id": "https://abiyeenzo.vercel.app/#person" }
       }
     ]
