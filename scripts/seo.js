@@ -177,7 +177,7 @@
         "@type": "WebSite",
         "@id": "https://abiyeenzo.vercel.app/#project-kaelix",
         "name": "Kaelix",
-        "description": "Site vitrine avec formulaire de contact et espace admin protégé. Projet client livré, code source privé.",
+        "description": "Site officiel de Kaelix, une entreprise de développement logiciel, avec formulaire de contact et espace admin protégé. Projet client livré, code source privé.",
         "url": "https://kaelix.onrender.com/",
         "creator": { "@id": "https://abiyeenzo.vercel.app/#person" }
       },
@@ -193,7 +193,7 @@
         "@type": "WebSite",
         "@id": "https://abiyeenzo.vercel.app/#project-njangui",
         "name": "NJANGUI+",
-        "description": "Plateforme de financement participatif (tontine digitale) avec paiements Mobile Money via Notch Pay. Produit Æ Corporation, code source privé.",
+        "description": "Plateforme de financement participatif : les utilisateurs contribuent pour soutenir les projets d'autres personnes, avec paiements Mobile Money. Produit Æ Corporation, code source privé.",
         "url": "https://njangui-plus.onrender.com/",
         "creator": { "@id": "https://abiyeenzo.vercel.app/#person" }
       }
