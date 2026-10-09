@@ -1,0 +1,21 @@
+{
+  "name": "Abiye Enzo Portfolio - Æ Corporation",
+  "short_name": "Abiye Enzo",
+  "description": "Portfolio officiel d'Abiye Gebresilassie Enzo Emmanuel, developpeur Python et hacker ethique, fondateur d'AE Corporation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
