@@ -1298,6 +1298,14 @@ footer {
   text-align: center;
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
