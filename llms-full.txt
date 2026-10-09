@@ -48,12 +48,15 @@ Founded by Abiye Enzo, **Æ Corporation** specializes in:
 ### Products / SaaS (Æ Corporation)
 - **NJANGUI+**: Crowdfunding platform where users contribute to support other people's projects, PHP 8.2 / PostgreSQL, with Mobile Money payments. An Æ Corporation product, source code private. https://njangui-plus.onrender.com/
 
-## 6. Creative Works (Literature)
+## 6. CTF Writeups (github.com/abiyeenzo/Writeup)
+- **Jangow: 1.0.1** (Vulnhub, difficulty Easy): RCE via command injection in a web parameter, SSH access through credential reuse found on the box, then a DirtyCOW privilege escalation attempt. https://github.com/abiyeenzo/Writeup/blob/main/vulnhub/Jangow-1.0.1.md
+
+## 7. Creative Works (Literature)
 - **Author Profile**: Wattpad (@abiye_enzo)
 - **Genres**: Hard Sci-Fi, Cyberpunk, Artificial Intelligence dilemmas, Cyber warfare, Speculative fiction.
 - **Focus**: Blending realistic technical cybersecurity knowledge with engaging narrative fiction.
 
-## 7. Official Links & Social Graph
+## 8. Official Links & Social Graph
 - **Website / Portfolio**: https://abiyeenzo.vercel.app/
 - **Portfolio source code**: https://github.com/abiyeenzo/abiyeenzo.github.io
 - **HackTheBox Profile**: https://app.hackthebox.com/profile/abiyeenzo

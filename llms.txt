@@ -42,6 +42,9 @@
 ## Products / SaaS (Æ Corporation)
 - **NJANGUI+**: Crowdfunding platform where users contribute to support other people's projects, with Mobile Money payments. https://njangui-plus.onrender.com/
 
+## CTF Writeups (GitHub: github.com/abiyeenzo/Writeup)
+- **Jangow: 1.0.1** (Vulnhub, Easy): Command injection RCE, credential reuse for SSH access, DirtyCOW privilege escalation attempt. https://github.com/abiyeenzo/Writeup/blob/main/vulnhub/Jangow-1.0.1.md
+
 ## Official Portfolio
 - URL: https://abiyeenzo.vercel.app/
 - Full detail: https://abiyeenzo.vercel.app/llms-full.txt

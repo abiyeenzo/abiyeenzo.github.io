@@ -105,6 +105,7 @@
         <a href="#projects" class="nav-link" id="nav-projects">Projets</a>
         <a href="#certifications" class="nav-link" id="nav-certs">Certifications</a>
         <a href="#profiles" class="nav-link" id="nav-profiles">HTB & GitHub</a>
+        <a href="#writeups" class="nav-link" id="nav-writeups">Writeups</a>
         <a href="#corporation" class="nav-link" id="nav-corp">Æ Corporation</a>
         <a href="#books" class="nav-link" id="nav-books">Écrits SF</a>
         <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
@@ -762,6 +763,24 @@
         </div>
       </section>
 
+      <!-- Writeups Section -->
+      <section class="section" id="writeups">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span id="tag-writeups">RETOURS D'EXPÉRIENCE</span>
+          </div>
+          <h2 class="section-title" id="title-writeups">CTF Writeups</h2>
+          <p class="section-desc" id="desc-writeups">
+            Résolutions de machines CTF documentées pas à pas : reconnaissance, exploitation et élévation de privilèges. L'intégralité des writeups est publiée sur le dépôt GitHub dédié.
+          </p>
+        </div>
+
+        <div class="project-grid" id="writeups-grid">
+          <!-- Rendue dynamiquement par renderWriteups() à partir du tableau writeups -->
+        </div>
+      </section>
+
       <!-- Æ Corporation Banner -->
       <section class="section" id="corporation">
         <div class="corp-banner">
@@ -1195,6 +1214,13 @@
         descProfiles: "Découvrez les accomplissements sur la plateforme de cybersécurité HackTheBox et les dépôts de code partagés avec la communauté.",
         htbDesc: "Entraînement continu sur machines virtuelles réalistes, résolution de CTFs, simulation d'attaques réseau et élévation de privilèges dans des environnements Linux et Windows durcis.",
         githubDesc: "Hébergement des outils Python open-source, scripts d'analyse de sécurité, automatisations système et démonstrateurs de solutions créés par Abiye Enzo.",
+        tagWriteups: "RETOURS D'EXPÉRIENCE",
+        titleWriteups: "CTF Writeups",
+        descWriteups: "Résolutions de machines CTF documentées pas à pas : reconnaissance, exploitation et élévation de privilèges. L'intégralité des writeups est publiée sur le dépôt GitHub dédié.",
+        txtViewWriteup: "Lire le writeup",
+        difficulty_easy: "Easy",
+        difficulty_medium: "Medium",
+        difficulty_hard: "Hard",
         tagCorp: "ENTREPRISE & INNOVATION",
         titleCorp: "Æ Corporation",
         descCorp: "Fondée et dirigée par <strong>Abiye Enzo</strong>, Æ Corporation conçoit des solutions numériques à haute valeur ajoutée. Notre mission : apporter une sécurité intransigeante et des développements logiciels Python sur-mesure aux entreprises, startups et particuliers.",
@@ -1255,6 +1281,13 @@
         descProfiles: "Explore real-world challenges solved on HackTheBox and open-source Python code repositories contributed to the tech community.",
         htbDesc: "Continuous hands-on training on realistic virtual targets, CTF challenges, network attack simulation, and privilege escalation on hardened Linux and Windows environments.",
         githubDesc: "Open-source Python security tools, network automation scripts, and hardened system solutions developed by Abiye Enzo.",
+        tagWriteups: "LESSONS LEARNED",
+        titleWriteups: "CTF Writeups",
+        descWriteups: "Step-by-step CTF machine walkthroughs: reconnaissance, exploitation, and privilege escalation. Full writeups are published on the dedicated GitHub repository.",
+        txtViewWriteup: "Read the writeup",
+        difficulty_easy: "Easy",
+        difficulty_medium: "Medium",
+        difficulty_hard: "Hard",
         tagCorp: "ENTERPRISE & INNOVATION",
         titleCorp: "Æ Corporation",
         descCorp: "Founded and spearheaded by <strong>Abiye Enzo</strong>, Æ Corporation delivers high-assurance digital solutions. Our mission: uncompromising cybersecurity posture and custom Python software engineering for businesses and individuals.",
@@ -1276,6 +1309,49 @@
         txtSendMail: "Send an Email"
       }
     };
+
+    // Writeups CTF : ajouter une entrée ici suffit a l'afficher dans la section "CTF Writeups".
+    const writeups = [
+      {
+        name: "Jangow: 1.0.1",
+        platform: "Vulnhub",
+        difficulty: "easy",
+        descFr: "RCE par injection de commande dans un parametre web, reutilisation de credentials trouves sur la machine pour l'acces SSH, puis tentative d'elevation de privileges via DirtyCOW.",
+        descEn: "Command injection RCE through a web parameter, reuse of credentials found on the box for SSH access, then a privilege escalation attempt via DirtyCOW.",
+        tags: ["Command Injection", "Credential Reuse", "DirtyCOW"],
+        url: "https://github.com/abiyeenzo/Writeup/blob/main/vulnhub/Jangow-1.0.1.md"
+      }
+    ];
+
+    function renderWriteups(lang) {
+      const t = i18n[lang] || i18n.fr;
+      const grid = document.getElementById('writeups-grid');
+      if (!grid) return;
+      grid.innerHTML = writeups.map((w, i) => {
+        const desc = lang === 'en' ? w.descEn : w.descFr;
+        const difficultyLabel = t['difficulty_' + w.difficulty] || w.difficulty;
+        return `
+          <div class="project-card" data-category="writeup">
+            <div>
+              <div class="project-header">
+                <span class="project-name">${w.name}</span>
+                <span class="project-badge project-badge-${w.difficulty}" id="badge-writeup-${i}">${difficultyLabel}</span>
+              </div>
+              <p class="card-text">${desc}</p>
+              <div class="skill-tags">
+                <span class="tech-tag">${w.platform}</span>
+                ${w.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
+              </div>
+            </div>
+            <div class="cert-actions">
+              <a href="${w.url}" target="_blank" rel="noopener noreferrer" class="btn-cert">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>${t.txtViewWriteup}</span>
+              </a>
+            </div>
+          </div>`;
+      }).join('');
+    }
 
     let currentLang = localStorage.getItem('ae_lang') || 'fr';
 
@@ -1339,6 +1415,11 @@
       document.getElementById('desc-profiles').textContent = t.descProfiles;
       document.getElementById('htb-desc').textContent = t.htbDesc;
       document.getElementById('github-desc').textContent = t.githubDesc;
+
+      document.getElementById('tag-writeups').textContent = t.tagWriteups;
+      document.getElementById('title-writeups').textContent = t.titleWriteups;
+      document.getElementById('desc-writeups').textContent = t.descWriteups;
+      renderWriteups(lang);
 
       document.getElementById('tag-corp').textContent = t.tagCorp;
       document.getElementById('title-corp').textContent = t.titleCorp;
