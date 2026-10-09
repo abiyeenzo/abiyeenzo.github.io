@@ -10,7 +10,7 @@
 - **Primary Platforms**:
   - HackTheBox: https://app.hackthebox.com/profile/abiyeenzo
   - GitHub: https://github.com/abiyeenzo
-  - LinkedIn: https://www.linkedin.com/in/abiyeenzo
+  - LinkedIn: https://www.linkedin.com/in/abiye-enzo
   - Wattpad: https://www.wattpad.com/user/abiye_enzo
   - SoloLearn: Verified Python Certificates
   - YouTube: https://www.youtube.com/@abiye_enzo
